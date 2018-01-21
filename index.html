@@ -13,10 +13,8 @@
 	<!--include google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
-
 </head>
 <body>
-
 <div class='main-wrapper'>
 		<h1>Hello world!</h1> 
 <div class="block2">
@@ -26,7 +24,7 @@
 		
 		<span class="DHeader">about me...</span>
 <pre CLASS="text">
-fullName: "Dolet Bizhev",
+fullName: "<span class='Idname'>Dolet Bizhev</span>",
 hometown: <span class="string">"<a target="_blank" href="https://goo.gl/maps/Q6EUD9pB5842">Labinsk, Russia</a>"</span>,
 age: <span id="age"></span>,
 
@@ -37,11 +35,8 @@ now I live in:<span class="string">"<a target="_blank" href="https://www.google.
 	<span class="cursor">|</span>
 </div>
 	</div>
-	<script type="text/javascript">
-		var A1 = document.getElementById("age");
-		var birthday = new Date("December 15, 1990");
-		var today = new Date();
-		A1.innerHTML = Math.floor((today - birthday) / 31536000000);
-	</script>
+	
+	<script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+	<script src="libs/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+{
+  "name": "bizhev",
+  "homepage": "https://github.com/Bizhev/bizhev.github.io",
+  "authors": [
+    "Dolet Bizhev <doletbizhev@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "Dolet"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

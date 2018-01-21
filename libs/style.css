@@ -101,7 +101,7 @@ button:hover, button:focus {
 .text {
 	color: #E2DA6E
 }
-.DHeader {
-	color: #42e5f4;
-}
-}
+	.DHeader {
+		color: #42e5f4;
+	}
+
