@@ -9388,5 +9388,8 @@ A1.innerHTML = Math.floor((today - birthday) / 31536000000);
 
 var t1 = new TimelineMax();
 t1.from(".DHeader", 2, { y: -100 }).from(".main-wrapper", 2, { y: -300 }, "-=2").from(".Idname", 2, { y: -300 }, "-=2").from(".img-rad", 2, { x: -900 }, "-=0").from(".block1", 2, { y: 1000 }, "-=2");
-}).call(this,require("Wb8Gej"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_63dbc422.js","/")
+
+console.log('window', window);
+console.log("location", window.location);
+}).call(this,require("Wb8Gej"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_5c3251f1.js","/")
 },{"Wb8Gej":2,"buffer":3,"gsap":4}]},{},[6])
