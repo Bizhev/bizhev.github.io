@@ -1,10 +1,8 @@
+import './app'
+import '../sass/main.sass'
+// import '../sass/media.css'
 import "gsap";
 
-let A1 = document.getElementById("age");
-let birthday = new Date("December 15, 1990");
-var today = new Date();
-
-A1.innerHTML = Math.floor((today - birthday) / 31536000000);
 
 let t1 = new TimelineMax();
 t1
@@ -12,7 +10,7 @@ t1
   .from(".main-wrapper",2,{y: -300},"-=2")
   .from(".Idname",2,{y: -300},"-=2")
   .from(".img-rad",2,{x: -900},"-=0")
-  .from(".block1",2,{y: 1000},"-=2");
-
+  .from(".div-txt",2,{y: 1000},"-=2")
+  // .to(bg2.scale, 1.5, { x: "+=0.018", y: "+=0.018" }, 1);
   console.log('window',window);
   console.log("location", window.location);
