@@ -23,7 +23,7 @@ config = {
         use: [{loader: "style-loader"}, 
               {loader: "css-loader"}, 
               {loader: "sass-loader",
-                options: { includePaths: ["src/style.ssas", "dist/css/style.css"]}
+                options: { includePaths: ["src/sass/main.sass", "dist/css/style.css"]}
               },
              ]
       },    
