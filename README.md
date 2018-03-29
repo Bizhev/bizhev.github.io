@@ -1,5 +1,7 @@
 # Home page
 
+[preview](https://bizhev.github.io/)
+
 Template easy-server on use  node.js, webpack,babel-js, sass
 
 ## Getting Started

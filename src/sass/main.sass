@@ -9,8 +9,7 @@
  font-family: 'Nanum Myeongjo', serif
 
 body 
-	backgrou
-		nd: #fff
+	background: #fff
 	color: #111
 	font-size: 18pt
 	position: relative
@@ -20,9 +19,10 @@ body
 .main-wrapper  
 	margin-top: 50px
 	position: relative
+
 .ava-div
 	display: inline-block
-	+txt1
+	
 
 .img-rad
 	border-radius: 10%  
@@ -33,15 +33,30 @@ a
 ul li 
 	list-style: none
 	display: block  
+	+h2
+	// +txt1
+
 
 .piece
 	display: inline-block
 	padding: 10px
+	text-align: left
+	width: 250px
+	
 
-.icon,.icon i, .piece a
-	display: inline-block
+.label
+	font-size: 12pt
+// .icon,.icon i, .piece a
+// 	display: inline-block
+.icon
+	margin-right: 10px
+.icon i
+	font-size: 25pt
 
 .piece:HOVER	
 	background-color: #F0EFEF 
 	border-radius: 5%  
 	padding: 10px
+.piece a 
+	display: inline-flex
+	
