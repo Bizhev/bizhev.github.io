@@ -1,4 +1,4 @@
-# w - SERVER
+# Home page
 
 Template easy-server on use  node.js, webpack,babel-js, sass
 
