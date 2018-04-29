@@ -28,7 +28,7 @@
     "path": "^0.12.7",
     "pixi.js": "^4.7.3",
     "pubsub-js": "^1.6.0",
-    "style-loader": "^0.20.3",
+    "style-loader": "^0.21.0",
     "ts-loader": "^4.2.0",
     "typescript": "^2.7.2",
     "webpack": "^4.6.0",
