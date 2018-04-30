@@ -14,7 +14,7 @@ body
 	font-size: 18pt
 	position: relative
 	text-align: center
-	+h2
+	// +h3
 
 .main-wrapper  
 	margin-top: 50px
@@ -27,9 +27,8 @@ svg
 .ava-div
 	display: inline-block
 	
-
 .img-rad
-	border-radius: 10%  
+	border-radius: 30%  
 	height: 300px
 a
     color: inherit
@@ -37,30 +36,41 @@ a
 ul li 
 	list-style: none
 	display: block  
-	+h2
-	// +txt1
+	// +h3
+	+txt1
 
 
 .piece
 	display: inline-block
-	padding: 10px
+	padding: 0px
 	text-align: left
 	width: 250px
-	
+  box-sizing: border-box
+	.icon
+		display: inline-block
+		// margin-top: 10px
 
-.label
-	font-size: 12pt
-// .icon,.icon i, .piece a
-// 	display: inline-block
-.icon
-	margin-right: 10px
-.icon i
-	font-size: 25pt
+	.label
+		color: #555
+		margin-right: 5px
+		font-size: 12pt
+		display: block
+		height: 10px
+	.value
+		height: 10px
+		display: block
+	
+	
+	
 
 .piece:HOVER	
 	background-color: #F0EFEF 
 	border-radius: 5%  
-	padding: 10px
+	// padding: 10px
+	
+// .icon,.icon i, .piece a
+// 	display: inline-block
+
 .piece a 
 	display: inline-flex
 
