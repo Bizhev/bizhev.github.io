@@ -1,6 +1,8 @@
 <template>
+
 <div class="search">
-    <input type="text" v-model="keyword">   
+  <h2>ПОРТФОЛИО</h2>
+    <input placeholder="ПОИСК"  type="text" v-model="keyword">   
 </div>    
 </template>
 

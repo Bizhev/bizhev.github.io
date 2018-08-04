@@ -51,6 +51,14 @@ export default {
 </script>
 
 <style>
+body {
+	background: #ccc url(../imgs/img-noise.png) repeat;
+	position: relative;
+	text-align: center;
+	color: #111;
+	padding-top: 10vw;
+}
+
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

@@ -14,7 +14,7 @@ module.exports = {
 
  },
   head: {
-    title: 'my-app',
+    title: 'Долет Бижев',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

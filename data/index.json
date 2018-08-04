@@ -1,11 +1,22 @@
 [   
     {
+        "id": 15,
+        "url": "http://bizhev.ru",
+        "img": "",
+        "title": "nuxt server development SPA",
+        "tags":["vue","SPA"],
+        "Difficulty": "",
+        "description": "catalog my skills",
+        "github": "https://github.com/Bizhev/bizhev.github.io/tree/vue"
+    },
+
+    {
         "id": 14,
         "url": "https://github.com/youtodo/g-server",
         "img": "",
         "title": "gulp - template server",
         "tags":["template"],
-        "Difficulty": 0,
+        "Difficulty": "",
         "description": "gulp server template",
         "github": "https://github.com/youtodo/g-server"
     },
@@ -54,7 +65,7 @@
     },   
     {
         "id": 9,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task9.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task9.md",
         "img": "",
         "title": "The Hashtag Generator",
         "tags":["ALGORITHMS", "STRINGS", "ENG"],
@@ -64,7 +75,7 @@
     },
     {
         "id": 8,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task8.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task8.md",
         "img": "",
         "title": "Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence",
         "tags":["FUNDAMENTALS", "ENG"],
@@ -74,7 +85,7 @@
     },
     {
         "id": 7,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task7.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task7.md",
         "img": "",
         "title": "Simple Pig Latin",
         "tags":["ALGORITHMS", "ENG"],
@@ -84,7 +95,7 @@
     },
     {
         "id": 6,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task6.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task6.md",
         "img": "",
         "title": "Regex count lowercase letters",
         "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ALGORITHMS", "ENG"],
@@ -94,7 +105,7 @@
     },
     {
         "id": 5,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task5.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task5.md",
         "img": "",
         "title": "A Chain adding function",
         "tags":["PUZZLES", "ARITHMETIC", "MATHEMATICS", "ALGORITHMS", "NUMBERS", "FUNCTIONS", "CONTROL FLOW", "BASIC LANGUAGE FEATURES", "FUNDAMENTALS", "ADVANCED LANGUAGE FEATURES", "FUNCTIONAL PROGRAMMING", "DECLARATIVE PROGRAMMING", "ENG"],
@@ -104,7 +115,7 @@
     },
     {
         "id": 4,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task4.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task4.md",
         "img": "",
         "title": "RGB To Hex Conversion",
         "tags":["ALGORITHMS", "ENG"],
@@ -114,7 +125,7 @@
     },
     {
         "id": 3,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task3.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task3.md",
         "img": "",
         "title": "Regex validate PIN code",
         "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
@@ -124,7 +135,7 @@
     },
     {
         "id": 2,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task2.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task2.md",
         "img": "",
         "title": "Count the smiley faces!",
         "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
@@ -134,7 +145,7 @@
     },
     {
         "id": 1,
-        "url": "https://github.com/youtodo/main/blob/master/tasks/task1.md",
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task1.md",
         "img": "",
         "title": "Which are in?",
         "tags": ["REFACTORING", "ARRAYS", "SEARCH", "ALGORITHMS", "LISTS", "DATA STRUCTURES", "STRINGS", "ENG"],

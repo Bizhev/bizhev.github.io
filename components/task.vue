@@ -1,8 +1,9 @@
 <template>
     <div class="task">
         <nuxt-link :to="'/task/'+task.id">
-            <h2>{{task.title}}</h2>
+            <p>{{task.title}}</p>
         </nuxt-link>
+        <div>{{task.description}}</div>
     </div>
 </template>
 
@@ -21,6 +22,7 @@ export default {
 };
 </script>
 <style>
+
 </style>
 
 
