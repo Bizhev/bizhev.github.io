@@ -1,0 +1,146 @@
+[   
+    {
+        "id": 14,
+        "url": "https://github.com/youtodo/g-server",
+        "img": "",
+        "title": "gulp - template server",
+        "tags":["template"],
+        "Difficulty": 0,
+        "description": "gulp server template",
+        "github": "https://github.com/youtodo/g-server"
+    },
+ 
+    {
+        "id": 13,
+        "url": "https://github.com/youtodo/w-server",
+        "img": "",
+        "title": "Webpack",
+        "tags":["template"],
+        "Difficulty": 0,
+        "description": "webpack - template server",
+        "github": "https://github.com/youtodo/w-server"
+    },
+
+    {
+        "id": 12,
+        "url": "https://youtodo.github.io/test-calendar/",
+        "img": "",
+        "title": "Календарь",
+        "tags":["test" ],
+        "Difficulty": 0,
+        "description": "Тестовое задание для разработчика frontend, календарь",
+        "github": "https://github.com/youtodo/test-calendar"
+    },
+
+    {
+        "id": 11,
+        "url": "https://youtodo.github.io/img-scale/",
+        "img": "",
+        "title": "PIXI - IMG - WAVES",
+        "tags":["waves", "observe", "ENG"],
+        "Difficulty": 0,
+        "description": "Появление картинок, observe",
+        "github": "https://github.com/youtodo/img-scale"
+    },
+    {
+        "id": 10,
+        "url": "https://youtodo.github.io/pixi-oblique/",
+        "img": "",
+        "title": "Transition oblique",
+        "tags":["pixi.js", "pubsub-js", "gsap", "gulp", "RU"],
+        "Difficulty": 0,
+        "description": "SPA, наклонный переход страниц",
+        "github": "https://github.com/youtodo/pixi-oblique"
+    },   
+    {
+        "id": 9,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task9.md",
+        "img": "",
+        "title": "The Hashtag Generator",
+        "tags":["ALGORITHMS", "STRINGS", "ENG"],
+        "Difficulty": 5,
+        "description": "A common task",
+        "github": ""
+    },
+    {
+        "id": 8,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task8.md",
+        "img": "",
+        "title": "Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence",
+        "tags":["FUNDAMENTALS", "ENG"],
+        "Difficulty": 8,
+        "description": "A common task. Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel",
+        "github": ""
+    },
+    {
+        "id": 7,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task7.md",
+        "img": "",
+        "title": "Simple Pig Latin",
+        "tags":["ALGORITHMS", "ENG"],
+        "Difficulty": 5,
+        "description": "A common task",
+        "github": ""
+    },
+    {
+        "id": 6,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task6.md",
+        "img": "",
+        "title": "Regex count lowercase letters",
+        "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ALGORITHMS", "ENG"],
+        "Difficulty": 6,
+        "description": "A common task",
+        "github": ""
+    },
+    {
+        "id": 5,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task5.md",
+        "img": "",
+        "title": "A Chain adding function",
+        "tags":["PUZZLES", "ARITHMETIC", "MATHEMATICS", "ALGORITHMS", "NUMBERS", "FUNCTIONS", "CONTROL FLOW", "BASIC LANGUAGE FEATURES", "FUNDAMENTALS", "ADVANCED LANGUAGE FEATURES", "FUNCTIONAL PROGRAMMING", "DECLARATIVE PROGRAMMING", "ENG"],
+        "Difficulty": 5,
+        "description": "A common task",
+        "github": ""
+    },
+    {
+        "id": 4,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task4.md",
+        "img": "",
+        "title": "RGB To Hex Conversion",
+        "tags":["ALGORITHMS", "ENG"],
+        "Difficulty": 5,
+        "description": "A common task",
+        "github": ""
+    },
+    {
+        "id": 3,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task3.md",
+        "img": "",
+        "title": "Regex validate PIN code",
+        "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
+        "Difficulty": 7,
+        "description": "A common task",
+        "github": ""
+    },
+    {
+        "id": 2,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task2.md",
+        "img": "",
+        "title": "Count the smiley faces!",
+        "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
+        "Difficulty": 6,
+        "description": "A common task",
+        "github": ""
+    },
+    {
+        "id": 1,
+        "url": "https://github.com/youtodo/main/blob/master/tasks/task1.md",
+        "img": "",
+        "title": "Which are in?",
+        "tags": ["REFACTORING", "ARRAYS", "SEARCH", "ALGORITHMS", "LISTS", "DATA STRUCTURES", "STRINGS", "ENG"],
+        "Difficulty": 6,
+        "description": "The task of using arrays in javascript",
+        "github": ""
+
+    }
+]

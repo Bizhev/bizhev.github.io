@@ -1,23 +1,23 @@
-# Home page
+# my-app
 
-[preview](https://bizhev.github.io/)
+> catalog project
 
-## Getting Started
+## Build Setup
 
-### Step 1. Set up the Development Environment
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-Install [Node.js® and npm](https://nodejs.org/en/download/) if they are not already on your machine.
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-### Step 2. Clone this repo and start
+# build for production and launch server
+$ npm run build
+$ npm start
 
-git clone this repo
-
-#### you can using yarn
+# generate static project
+$ npm run generate
 ```
-yarn
-yarn start
 
-yarn outdated
-yarn upgrade
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
-```
