@@ -1,11 +1,18 @@
 <template>
-	<section class="container">		
+
+	<section>		
+    <div class="broadcrumb">
+      <nuxt-link :to="'/'">Долет Бижев</nuxt-link>    
+    </div>
+    <div class="container">
+
     <Search @handleKeyword="setKeyword" />
     <transition-group name="task" class="task-grid">					
 		<div v-for="task in searchResultTasks" :key="task.id" class="task-item">
 		    <Task :task="task"/>				
 		</div>
     </transition-group>
+    </div>
 	</section>
 </template>
 
@@ -52,13 +59,21 @@ export default {
 
 <style>
 body {
-	background: #ccc url(../imgs/img-noise.png) repeat;
-	position: relative;
-	text-align: center;
-	color: #111;
-	padding-top: 10vw;
+  background: #ccc url(../imgs/img-noise.png) repeat;
+  padding-top: 1vw;
 }
-
+.container {
+  position: relative;
+  text-align: center;
+  color: #111;
+}
+.broadcrumb {
+  padding-left: 10px;
+}
+.broadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

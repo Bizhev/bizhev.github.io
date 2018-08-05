@@ -6,13 +6,7 @@ You can assume the input will always be a number.
 
 ## Tags
 
-_Fundamentals_,
-_Regular Expressions_,
-_Declarative Programming_,
-_Advanced Language Features_,
-_Strings_.
-
-
+_Fundamentals_, _Regular Expressions_, _Declarative Programming_, _Advanced Language_,_Strings_.
 
 [codepen](https://codepen.io/), [codewars](https://www.codewars.com/users/Bizhev)<br>
 

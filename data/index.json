@@ -1,12 +1,22 @@
 [   
     {
+        "id": 16,
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task10.md",
+        "img": "",
+        "title": "Validate code with simple regex",        
+        "tags":["Fundamentals", "Regular Expressions", "Declarative Programming", "Advanced Language Features", "Strings"],
+        "Difficulty": 8,
+        "description": "A common task",
+        "github": ""
+    },
+    {
         "id": 15,
         "url": "http://bizhev.ru",
         "img": "",
-        "title": "nuxt server development SPA",
+        "title": "Nuxt server development SPA",
         "tags":["vue","SPA"],
         "Difficulty": "",
-        "description": "catalog my skills",
+        "description": "My catalog showing my skills",
         "github": "https://github.com/Bizhev/bizhev.github.io/tree/vue"
     },
 
@@ -14,10 +24,10 @@
         "id": 14,
         "url": "https://github.com/youtodo/g-server",
         "img": "",
-        "title": "gulp - template server",
+        "title": "Gulp - template server",
         "tags":["template"],
         "Difficulty": "",
-        "description": "gulp server template",
+        "description": "Server template",
         "github": "https://github.com/youtodo/g-server"
     },
  
@@ -25,10 +35,10 @@
         "id": 13,
         "url": "https://github.com/youtodo/w-server",
         "img": "",
-        "title": "Webpack",
+        "title": "Webpack - template server",
         "tags":["template"],
         "Difficulty": 0,
-        "description": "webpack - template server",
+        "description": "Template server",
         "github": "https://github.com/youtodo/w-server"
     },
 

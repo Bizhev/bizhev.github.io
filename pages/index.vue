@@ -1,6 +1,6 @@
 
 <template>
-<section class="main-container">
+<section class="container">
 	<div class="ava">
 		<img class="ava__img" :src="'/3.png'" alt="Dolet Bizhev">
 		<h2>Долет Бижев</h2>
@@ -101,11 +101,23 @@ export default {
 };
 </script>
 <style>
-body {
+/* body {
 	background: #ccc url(./imgs/img-noise.png) repeat;
 	position: relative;
 	text-align: center;
 	color: #111;
+	padding-top: 10vw;
+} */
+body {
+	background: #ccc url(./imgs/img-noise.png) repeat;
+	padding-top: 1vw;
+}
+.container {
+	position: relative;
+	text-align: center;
+	color: #111;
+}
+.ava {
 	padding-top: 10vw;
 }
 ul {

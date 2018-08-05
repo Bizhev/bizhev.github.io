@@ -1,5 +1,9 @@
 <template>
     <div>
+      <div class="broadcrumb">
+        <nuxt-link :to="'/'">Долет Бижев</nuxt-link> > <nuxt-link :to="'/portfolio'">портфолио</nuxt-link>
+      </div>
+    <div class="container">
         <h2>{{title}}</h2>
         <h3>Описание</h3>
         <div>{{description}} </div>
@@ -7,7 +11,8 @@
         <div>{{tags}}</div>
       <p><a :href="''+url">Посмотреть</a></p>
       <p><a :href="''+github">repo</a></p>
-        <p><nuxt-link to="/portfolio">GO MAIN PORTFOLIOS</nuxt-link></p>
+        
+    </div>
     </div>
 </template>
 <script>
@@ -28,10 +33,20 @@ export default {
 <style>
 body {
 	background: #ccc url(../imgs/img-noise.png) repeat;
+	padding-top: 1vw;
+}
+.container {
 	position: relative;
 	text-align: center;
 	color: #111;
-	padding-top: 10vw;
 }
+.broadcrumb{
+  padding-left: 10px;  
+}
+.broadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
 </style>
 
