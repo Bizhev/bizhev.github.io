@@ -1,9 +1,7 @@
 <template>
-
-<div class="search">
-  
-    <input placeholder="ПОИСК"  type="text" v-model="keyword">   
-</div>    
+  <div class="search">  
+      <input placeholder="ПОИСК"  type="text" v-model="keyword">   
+  </div>    
 </template>
 
 <script>
@@ -24,7 +22,7 @@ export default {
 
 <style lamg="CSS" scoped>
 .search {
-    text-align: center;
+    text-align: left;
     padding: 30px;
 }
 .search input {

@@ -1,10 +1,10 @@
 <template>
-    <div class="task">
         <nuxt-link :to="'/task/'+task.id">
-            <p>{{task.title}}</p>
+          <div class="task">
+                  <p>{{task.title}}</p>
+                  <div>{{task.description}}</div>
+          </div>
         </nuxt-link>
-        <div>{{task.description}}</div>
-    </div>
 </template>
 
 <script>
@@ -22,6 +22,7 @@ export default {
 };
 </script>
 <style>
+
 
 </style>
 

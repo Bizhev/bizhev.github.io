@@ -1,12 +1,15 @@
 <template>
 
-	<section>		
-    <div class="broadcrumb">
+	<section class="portfolio">
+    
+    <div class="portfolio__broadcrumb">
       <nuxt-link :to="'/'">Долет Бижев</nuxt-link>    
     </div>
-    <div class="container">
+    <div class="portfolio__search">
+      <Search @handleKeyword="setKeyword" />
+    </div>
 
-    <Search @handleKeyword="setKeyword" />
+    <div class="portfolio__container">
     <transition-group name="task" class="task-grid">					
 		<div v-for="task in searchResultTasks" :key="task.id" class="task-item">
 		    <Task :task="task"/>				
@@ -62,17 +65,28 @@ body {
   background: #ccc url(../imgs/img-noise.png) repeat;
   padding-top: 1vw;
 }
-.container {
+.portfolio__container {
   position: relative;
   text-align: center;
   color: #111;
 }
-.broadcrumb {
-  padding-left: 10px;
+
+.portfolio__broadcrumb {
+  padding-left: 5vw;
+  width: 100;
+  /* background-color: #F00;
+  position: absolute; */
 }
-.broadcrumb a {
+.portfolio__broadcrumb a {
   text-decoration: none;
   color: #000;
+}
+.portfolio__search{
+  /* background-color: #fff; */
+  width: auto;
+  text-align: left;
+  position: relative;
+  display: inline-block;
 }
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
@@ -88,6 +102,11 @@ body {
   padding: 20px;
   background: #ccc;
   min-height: 100px;
+  border-radius: 10px;
+  text-align: left;
+}
+.task-item a{
+  text-decoration: none;
 }
 .task-grid {
   display: grid;
@@ -95,7 +114,7 @@ body {
   grid-gap: 20px;
 }
 .task-item {
-  transition: all 0.3s;
+  transition: all 0.3s;  
 }
 .task-enter,
 .task-leave-to {
