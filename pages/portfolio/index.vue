@@ -1,20 +1,15 @@
 <template>
-
-	<section class="portfolio">
-    
-    <div class="portfolio__broadcrumb">
-      <nuxt-link :to="'/'">Долет Бижев</nuxt-link>    
-    </div>
-    <div class="portfolio__search">
-      <Search @handleKeyword="setKeyword" />
-    </div>
+	<section class="portfolio">    
+    <div class="portfolio__broadcrumb"><nuxt-link :to="'/'">Долет Бижев</nuxt-link></div>
+    <div class="portfolio__search"><Search @handleKeyword="setKeyword" /></div>
 
     <div class="portfolio__container">
-    <transition-group name="task" class="task-grid">					
-		<div v-for="task in searchResultTasks" :key="task.id" class="task-item">
-		    <Task :task="task"/>				
-		</div>
-    </transition-group>
+      
+      <transition-group name="task" class="task-grid">					
+        <div v-for="task in searchResultTasks" :key="task.id" class="task-item">
+            <Task :task="task"/>				
+        </div>
+      </transition-group>
     </div>
 	</section>
 </template>
@@ -25,25 +20,28 @@ import Task from "@/components/task";
 import Search from "@/components/Search";
 
 export default {
+  
   components: {
     Task,
     Search
   },
   data() {
+    
     return {
       tasks: MYDATA,
       searchString: ""
     };
+    
   },
   computed: {
-    searchResultTasks() {
-      let keyword = this.searchString.toLowerCase();
-
+    searchResultTasks() {      
+      
+      let keyword = this.searchString.toLowerCase();      
       let results = this.tasks.filter(task => {
         if (task.title.toLowerCase().indexOf(keyword) !== -1) return task;
         if (
           task.tags.filter(tag => tag.toLowerCase().indexOf(keyword) !== -1)
-            .length > 0
+          .length > 0
         )
           return task;
         return false;
@@ -52,7 +50,7 @@ export default {
       return results;
     }
   },
-  methods: {
+  methods: {    
     setKeyword(keyword) {
       this.searchString = keyword;
     }
@@ -100,10 +98,19 @@ body {
 }
 .task {
   padding: 20px;
-  background: #ccc;
+  background: #fff;
   min-height: 100px;
   border-radius: 10px;
   text-align: left;
+  color: #000;
+  transition: background-color 0.3s, color 0.6s; 
+  
+
+}
+.task:hover {
+  background-color: #4286f4;
+  color: #fff;
+
 }
 .task-item a{
   text-decoration: none;
@@ -112,6 +119,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  padding: 20px;
 }
 .task-item {
   transition: all 0.3s;  

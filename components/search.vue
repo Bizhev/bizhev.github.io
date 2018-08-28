@@ -28,6 +28,8 @@ export default {
 .search input {
     padding: 5px;
     font-size: 10pt;
+    border-radius: 10px;
+    outline: none    
 }
 </style>
 

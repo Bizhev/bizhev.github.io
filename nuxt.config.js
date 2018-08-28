@@ -1,9 +1,14 @@
 const MYDATA = require ('./data/index.json');
 
+
+
 module.exports = {
   /*
   ** Headers of the page
   */
+  plugins: [
+      { src: '~plugins/ga.js', ssr: false }
+  ],
  generate:{
    routes: function(){
      let routes =MYDATA.map(task=>{
@@ -36,10 +41,17 @@ module.exports = {
     ** Run ESLint on save
     */
     modules: [
-      'bootstrap-vue/nuxt',
-
-      // Or if you have custom bootstrap CSS...
-      ['bootstrap-vue/nuxt', { css: false }],
+      [
+        '@nuxtjs/yandex-metrika',
+        {
+          id: '50035924',
+          webvisor: true,
+          clickmap:true,
+          // useCDN:false,
+          // trackLinks:true,
+          // accurateTrackBounce:true,
+        }
+      ],
     ],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {

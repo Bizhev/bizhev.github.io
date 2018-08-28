@@ -1,5 +1,15 @@
 [   
     {
+        "id": 17,
+        "url": "",
+        "img": "",
+        "title": "Test task",
+        "tags":["python"],
+        "Difficulty": 0,
+        "description": "For full stack - developer",
+        "github": "https://github.com/youtodo/python"
+    },
+    {
         "id": 16,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task10.md",
         "img": "",
@@ -14,8 +24,8 @@
         "url": "http://bizhev.ru",
         "img": "",
         "title": "Nuxt server development SPA",
-        "tags":["vue","SPA"],
-        "Difficulty": "",
+        "tags":["vuejs", "SPA", "result"],
+        "Difficulty": 0,
         "description": "My catalog showing my skills",
         "github": "https://github.com/Bizhev/bizhev.github.io/tree/vue"
     },
@@ -26,7 +36,7 @@
         "img": "",
         "title": "Gulp - template server",
         "tags":["template"],
-        "Difficulty": "",
+        "Difficulty": 0,
         "description": "Server template",
         "github": "https://github.com/youtodo/g-server"
     },
@@ -58,9 +68,9 @@
         "url": "https://youtodo.github.io/img-scale/",
         "img": "",
         "title": "PIXI - IMG - WAVES",
-        "tags":["waves", "observe", "ENG"],
+        "tags":["waves", "observe", "RU", "result"],
         "Difficulty": 0,
-        "description": "Появление картинок, observe",
+        "description": "Появление картинок, observe, эфект при наведении на картинок",
         "github": "https://github.com/youtodo/img-scale"
     },
     {
@@ -68,9 +78,9 @@
         "url": "https://youtodo.github.io/pixi-oblique/",
         "img": "",
         "title": "Transition oblique",
-        "tags":["pixi.js", "pubsub-js", "gsap", "gulp", "RU"],
+        "tags":["pixi.js", "pubsub-js", "gsap", "gulp", "spa", "result", "RU"],
         "Difficulty": 0,
-        "description": "SPA, наклонный переход страниц",
+        "description": "SPA, наклонный переход страниц, эфект после скрола. ",
         "github": "https://github.com/youtodo/pixi-oblique"
     },   
     {

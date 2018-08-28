@@ -4,14 +4,17 @@
         <nuxt-link :to="'/'">Долет Бижев</nuxt-link> > <nuxt-link :to="'/portfolio'">портфолио</nuxt-link>
       </div>
     <div class="container">
-        <h2>{{title}}</h2>
+      <div class="description">
+        <h2 class="title-task"> {{title}}</h2>
         <h3>Описание</h3>
         <div>{{description}} </div>
         <h3>ТЕГИ:</h3>
         <div>{{tags}}</div>
-      <p><a :href="''+url">Посмотреть</a></p>
-      <p><a :href="''+github">repo</a></p>
+        <p><b>difficulty</b>: {{Difficulty}} kyu</p>
+      <p><a class="link" :href="''+url">Посмотреть</a></p>
+      <p><a class="link" :href="''+github">Помиотреть репозиторий на github</a></p>
         
+      </div>
     </div>
     </div>
 </template>
@@ -40,12 +43,36 @@ body {
 	text-align: center;
 	color: #111;
 }
+.description {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  max-width: 600px;
+}
 .broadcrumb{
   padding-left: 10px;  
 }
+.link{  
+  background-color: #ccc;  
+  color: #fff;
+  margin-top: 5px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 1s 
+}
+.link:hover{
+  background-color: #5e89d1;
+  transition: background-color 1s 
+}
 .broadcrumb a {
   text-decoration: none;
-  color: #000;
+  color: #000;  
+}
+.title-task{
+  color:#5e89d1
 }
 
 </style>

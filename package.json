@@ -14,7 +14,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.0.0-rc.11",
+    "@nuxtjs/yandex-metrika": "^0.1.0",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

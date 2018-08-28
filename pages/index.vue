@@ -1,31 +1,26 @@
-
 <template>
 <section class="container">
 	<div class="ava">
-		<img class="ava__img" :src="'/3.png'" alt="Dolet Bizhev">
-		<h2>Долет Бижев</h2>
+			<img class="ava__img" :src="'/3.png'" alt="Dolet Bizhev">
+			<h2>Долет Бижев</h2>
+		
 	</div>
-    
-
 <ul class="contact-list">
-
 	<li class="contact__item">
 		<a href="mailto:dolet@bizhev.ru">		
 			<div class="contact__item__icon">
 				<!-- <img :src="'./img/mail.png'" alt="mail" /> -->
 				<svg version="1.1" x="0px" y="0px" fill="#000000"
 					width="30px" height="30px" viewBox="0 0 700 500">
-				<g>
-					<path d="M306.768,346.814h0.131c4.615,0,9.176-1.339,12.866-3.777l1.001-0.643c0.218-0.142,0.446-0.271,0.675-0.424l11.658-9.645
-						l278.259-229.624c-0.576-0.795-1.557-1.339-2.602-1.339H3.233c-0.751,0-1.448,0.272-2.003,0.729l291.125,239.954
-						C296.024,345.083,301.259,346.814,306.768,346.814z M0,133.899v340.37l208.55-168.471L0,133.899z M403.668,306.941L612,474.356
-						V135.031L403.668,306.941z M337.431,361.585c-8.305,6.814-19.168,10.57-30.576,10.57c-11.451,0-22.304-3.734-30.587-10.516
-						l-47.765-39.394L0,506.806v0.587c0,1.753,1.502,3.244,3.276,3.244h605.491c1.741,0,3.232-1.491,3.232-3.255v-0.544L383.693,323.4
-						L337.431,361.585z"/>
-				</g>
-
+					<g>
+						<path d="M306.768,346.814h0.131c4.615,0,9.176-1.339,12.866-3.777l1.001-0.643c0.218-0.142,0.446-0.271,0.675-0.424l11.658-9.645
+							l278.259-229.624c-0.576-0.795-1.557-1.339-2.602-1.339H3.233c-0.751,0-1.448,0.272-2.003,0.729l291.125,239.954
+							C296.024,345.083,301.259,346.814,306.768,346.814z M0,133.899v340.37l208.55-168.471L0,133.899z M403.668,306.941L612,474.356
+							V135.031L403.668,306.941z M337.431,361.585c-8.305,6.814-19.168,10.57-30.576,10.57c-11.451,0-22.304-3.734-30.587-10.516
+							l-47.765-39.394L0,506.806v0.587c0,1.753,1.502,3.244,3.276,3.244h605.491c1.741,0,3.232-1.491,3.232-3.255v-0.544L383.693,323.4
+							L337.431,361.585z"/>
+					</g>
 				</svg>
-
 			</div>
 			<div class="contact__item__description">
 				<div class="label">Почта</div>
@@ -89,7 +84,6 @@
 </ul>
 <!-- Второй блок -->
 <ul class="contact-list">
-
 	<li class="contact__item">
 		<a href="https://github.com/bizhev" target="_blank">
 			<div class="contact__item__icon">
@@ -113,7 +107,6 @@
 				C465.32,198.805,471,226.957,471,256s-5.68,57.195-16.879,83.675C443.295,365.271,427.785,388.27,408.027,408.027z"/>
 			</g>
 			</svg>
-
 			</div>
 			<div class="contact__item__description">
 				<div class="label">Гитхаб</div>
@@ -161,7 +154,6 @@
 					c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z"/>
 				</g>
 				</svg>
-
 			</div>
 			<div class="contact__item__description">
 
@@ -176,22 +168,11 @@
 </section>
 </template>
 <script>
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
-
 export default {
-
 
 };
 </script>
 <style>
-/* body {
-	background: #ccc url(./imgs/img-noise.png) repeat;
-	position: relative;
-	text-align: center;
-	color: #111;
-	padding-top: 10vw;
-} */
 body {
 	background: #ccc url(./imgs/img-noise.png) repeat;
 	padding-top: 1vw;
@@ -205,7 +186,9 @@ body {
 }
 .ava {
 	padding-top: 10vw;
+
 }
+
 ul {
   padding: 0;
   margin: 0;
@@ -291,9 +274,10 @@ h2 {
 	border-radius: 30%;
 	height: 13vw;
 	min-height:130px;	
-	margin-bottom: 2.5vh;
-	
+	margin-bottom: 2.5vh;	
+	transition: transform 2s 
+}
+.ava__img:hover{
+	transform: rotate3d(1, 1, 1, 240deg);
 }
 </style>
-
-
