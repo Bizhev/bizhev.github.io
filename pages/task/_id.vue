@@ -10,9 +10,10 @@
         <div>{{description}} </div>
         <h3>ТЕГИ:</h3>
         <div>{{tags}}</div>
-        <p><b>difficulty</b>: {{Difficulty}} kyu</p>
-      <p><a class="link" :href="''+url">Посмотреть</a></p>
-      <p><a class="link" :href="''+github">Помиотреть репозиторий на github</a></p>
+
+        <p v-if=Difficulty><b>difficulty</b>: {{Difficulty}} kyu</p>
+      <p v-if=url><a class="link" :href="''+url">Посмотреть</a></p>
+      <p v-if=github><a class="link" :href="''+github">Помиотреть репозиторий на github</a></p>
         
       </div>
     </div>
