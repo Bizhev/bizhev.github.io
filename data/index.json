@@ -1,15 +1,5 @@
 [   
     {
-        "id": 18,
-        "url": "https://youtodo.github.io/testForFE/",
-        "img": "",
-        "title": "Task for front-end developer",
-        "tags":["canvas"],
-        "Difficulty": 0,
-        "description": "Working with tables, arrays, canvas, etc.",
-        "github": "https://github.com/youtodo/testForFE"
-    },
-    {
         "id": 17,
         "url": "",
         "img": "",
@@ -42,7 +32,7 @@
 
     {
         "id": 14,
-        "url": "",
+        "url": "https://github.com/youtodo/g-server",
         "img": "",
         "title": "Gulp - template server",
         "tags":["template"],
@@ -53,7 +43,7 @@
  
     {
         "id": 13,
-        "url": "",
+        "url": "https://github.com/youtodo/w-server",
         "img": "",
         "title": "Webpack - template server",
         "tags":["template"],

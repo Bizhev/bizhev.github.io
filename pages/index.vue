@@ -235,7 +235,7 @@ h2 {
 .contact__item:hover .contact__item__icon svg{
 	fill: #ccc;
 	transition: transform 0.3s ease-in-out 0.3s;
-	transform: rotate3d(0, 1, 0, 90deg)
+	transform: rotate3d(0, 1, 0, 90deg);
 
 }
 
@@ -270,17 +270,14 @@ h2 {
 .ava{
 	padding-bottom: 2vh;
 }
-.ava:hover .ava__img{
-	padding-bottom: 2vh;
-	/* transform: rotate3d(1, 1, 1, 240deg); */
-	transform: scale(0, 0)
-}
 .ava__img{
 	border-radius: 30%;
 	height: 13vw;
 	min-height:130px;	
 	margin-bottom: 2.5vh;	
-	transition: transform 3s 
+	transition: transform 2s 
 }
-
+.ava__img:hover{
+	transform: rotate3d(1, 1, 1, 240deg);
+}
 </style>
