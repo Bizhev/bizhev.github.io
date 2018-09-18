@@ -1,15 +1,19 @@
 <template>
 <section class="container">
-	<div class="ava">
-			<img class="ava__img" :src="'/3.png'" alt="Dolet Bizhev">
-			<h2>Долет Бижев</h2>
+	<div v-on:click="avaImg=(avaImg.length===9)?'ava__img':'ava__img2'" class="ava" id="chImg">
+		<div v-on:click="img1=(img1.length===6)?'/22.png':'/3.png'" :class="avaImg" 
+		 >
+			<!-- v-bind:class="{ 'class1': cls1, 'class2': cls2 }" -->
+			<img  :src="img1" alt="Dolet Bizhev">
+		</div>	
+		
+		<h2>Долет Бижев</h2>
 		
 	</div>
 <ul class="contact-list">
 	<li class="contact__item">
 		<a href="mailto:dolet@bizhev.ru">		
 			<div class="contact__item__icon">
-				<!-- <img :src="'./img/mail.png'" alt="mail" /> -->
 				<svg version="1.1" x="0px" y="0px" fill="#000000"
 					width="30px" height="30px" viewBox="0 0 700 500">
 					<g>
@@ -32,7 +36,7 @@
 	<li class="contact__item">
 		<nuxt-link to="portfolio">
 			<div class="contact__item__icon">
-				<!-- <img :src="'./img/portfolio.png'" alt="mail" /> -->
+
 				<svg version="1.1" x="0px" y="0px" fill="#000000"
 					width="30px" height="30px" viewBox="0 0 50 50">
 				<g>
@@ -168,7 +172,26 @@
 </section>
 </template>
 <script>
-export default {
+export default {	
+	
+	data() {
+		return { 
+
+			img1: '/22.png',
+			img2: '/3.png',
+			img3: '/444.png',
+			avaImg: "ava__img",
+			avaImg2: "ava__img2",
+			
+		}
+	},
+	methods: {    
+		changeImg(s) {
+		
+
+			console.log('ok=>',this);
+		}
+	}
 
 };
 </script>
@@ -269,18 +292,47 @@ h2 {
 }
 .ava{
 	padding-bottom: 2vh;
+	display: inline-block;
+	
 }
-.ava:hover .ava__img{
-	padding-bottom: 2vh;
-	/* transform: rotate3d(1, 1, 1, 240deg); */
-	transform: scale(0, 0)
-}
-.ava__img{
+ /* .ava:hover .ava__img{
+	
+	transform: rotate3d(1, 1, 1, 240deg);
+	 transform: scale(0, 0)
+} */
+ 
+
+
+.ava__img img{
 	border-radius: 30%;
 	height: 13vw;
 	min-height:130px;	
 	margin-bottom: 2.5vh;	
-	transition: transform 3s 
+	display: inline-block;
+	transform: rotate3d(0, 1, 0, -360deg);
+	transition: transform 0.7s;
+	
+	
 }
+.ava__img2 img{
+	border-radius: 30%;
+	height: 13vw;
+	min-height:130px;	
+	margin-bottom: 2.5vh;	
+	display: inline-block;
+	transform: rotate3d(0, 1, 0, +360deg);
+	transition: transform 0.7s;	
+}
+.ava__img2 img:hover, .ava__img img:hover {
+	cursor: pointer;
+}
+
+
+/* .ava__img img:active {
+	cursor: pointer;
+	transform: rotate3d(0, 1, 0, -360deg);
+	transition: transform 3s;
+	
+} */
 
 </style>

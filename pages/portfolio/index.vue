@@ -103,11 +103,11 @@ body {
   border-radius: 10px;
   text-align: left;
   color: #000;
-  transition: background-color 0.3s, color 0.6s; 
   
 
 }
-.task:hover {
+.task:active {
+  transition: background-color 0.2s, color 0.3s; 
   background-color: #4286f4;
   color: #fff;
 

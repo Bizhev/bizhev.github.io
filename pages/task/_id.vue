@@ -33,17 +33,21 @@ export default {
     return getTaskBiId(myid, MYDATA);
   }
 };
+
 </script>
 <style>
+
 body {
-	background: #ccc url(../imgs/img-noise.png) repeat;
-	padding-top: 1vw;
+  background: #ccc url(../imgs/img-noise.png) repeat;
+  padding-top: 1vw;
 }
+
 .container {
 	position: relative;
 	text-align: center;
 	color: #111;
 }
+
 .description {
   display: inline-block;
   padding: 10px;
@@ -51,9 +55,11 @@ body {
   text-align: left;
   max-width: 600px;
 }
+
 .broadcrumb{
   padding-left: 10px;  
 }
+
 .link{  
   background-color: #ccc;  
   color: #fff;
@@ -64,14 +70,17 @@ body {
   display: inline-block;
   transition: background-color 1s 
 }
+
 .link:hover{
   background-color: #5e89d1;
   transition: background-color 1s 
 }
+
 .broadcrumb a {
   text-decoration: none;
   color: #000;  
 }
+
 .title-task{
   color:#5e89d1
 }
