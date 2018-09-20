@@ -19,12 +19,14 @@ module.exports = {
 
  },
   head: {
-    title: 'Долет Бижев',
+    title: 'Долет Бижев | Контакты',
     meta: [
       { charset: 'utf-8' },
       { name: 'google-site-verification', content: '9bJEh_akNn1Lvy0opVDG3cLXmyEvo8WYC_XMBpDaCoM' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'catalog project' }
+      { name: 'keywords', content: 'bizhev.ru, ишярумюкг, Долет, Долет Бижев, Dolet Bizhev' },
+      { name: 'description', content: 'Основные контакты с Долетом Бижевым.' },
+      // { hid: 'description', name: 'description', content: 'catalog project' }
       
              
     ],
