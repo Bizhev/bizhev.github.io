@@ -2,7 +2,7 @@
     {
         "id": 18,
         "url": "https://youtodo.github.io/testForFE/",
-        "img": "",
+        "img": "lose.png",
         "title": "Task for front-end developer",
         "tags":["canvas"],
         "Difficulty": 0,
@@ -12,7 +12,7 @@
     {
         "id": 17,
         "url": "",
-        "img": "",
+        "img": "lose.png",
         "title": "Test task",
         "tags":["python"],
         "Difficulty": 0,
@@ -22,7 +22,7 @@
     {
         "id": 16,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task10.md",
-        "img": "",
+        "img": "task.png",
         "title": "Validate code with simple regex",        
         "tags":["Fundamentals", "Regular Expressions", "Declarative Programming", "Advanced Language Features", "Strings"],
         "Difficulty": 8,
@@ -32,7 +32,7 @@
     {
         "id": 15,
         "url": "http://bizhev.ru",
-        "img": "",
+        "img": "bizhev-logo.png",
         "title": "Nuxt server development SPA",
         "tags":["vuejs", "SPA", "result"],
         "Difficulty": 0,
@@ -43,7 +43,7 @@
     {
         "id": 14,
         "url": "",
-        "img": "",
+        "img": "gulp-logo.png",
         "title": "Gulp - template server",
         "tags":["template"],
         "Difficulty": 0,
@@ -54,7 +54,7 @@
     {
         "id": 13,
         "url": "",
-        "img": "",
+        "img": "webpack.png",
         "title": "Webpack - template server",
         "tags":["template"],
         "Difficulty": 0,
@@ -65,7 +65,7 @@
     {
         "id": 12,
         "url": "https://youtodo.github.io/test-calendar/",
-        "img": "",
+        "img": "calendar.png",
         "title": "Календарь",
         "tags":["test" ],
         "Difficulty": 0,
@@ -76,7 +76,7 @@
     {
         "id": 11,
         "url": "https://youtodo.github.io/img-scale/",
-        "img": "",
+        "img": "waves.png",
         "title": "PIXI - IMG - WAVES",
         "tags":["waves", "observe", "RU", "result"],
         "Difficulty": 0,
@@ -86,7 +86,7 @@
     {
         "id": 10,
         "url": "https://youtodo.github.io/pixi-oblique/",
-        "img": "",
+        "img": "lose.png",
         "title": "Transition oblique",
         "tags":["pixi.js", "pubsub-js", "gsap", "gulp", "spa", "result", "RU"],
         "Difficulty": 0,
@@ -96,7 +96,7 @@
     {
         "id": 9,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task9.md",
-        "img": "",
+        "img": "task.png",
         "title": "The Hashtag Generator",
         "tags":["ALGORITHMS", "STRINGS", "ENG"],
         "Difficulty": 5,
@@ -106,8 +106,8 @@
     {
         "id": 8,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task8.md",
-        "img": "",
-        "title": "Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence",
+        "img": "task.png",
+        "title": "Exclamation marks series #11",
         "tags":["FUNDAMENTALS", "ENG"],
         "Difficulty": 8,
         "description": "A common task. Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel",
@@ -116,7 +116,7 @@
     {
         "id": 7,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task7.md",
-        "img": "",
+        "img": "task.png",
         "title": "Simple Pig Latin",
         "tags":["ALGORITHMS", "ENG"],
         "Difficulty": 5,
@@ -126,7 +126,7 @@
     {
         "id": 6,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task6.md",
-        "img": "",
+        "img": "task.png",
         "title": "Regex count lowercase letters",
         "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ALGORITHMS", "ENG"],
         "Difficulty": 6,
@@ -136,7 +136,7 @@
     {
         "id": 5,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task5.md",
-        "img": "",
+        "img": "task.png",
         "title": "A Chain adding function",
         "tags":["PUZZLES", "ARITHMETIC", "MATHEMATICS", "ALGORITHMS", "NUMBERS", "FUNCTIONS", "CONTROL FLOW", "BASIC LANGUAGE FEATURES", "FUNDAMENTALS", "ADVANCED LANGUAGE FEATURES", "FUNCTIONAL PROGRAMMING", "DECLARATIVE PROGRAMMING", "ENG"],
         "Difficulty": 5,
@@ -146,7 +146,7 @@
     {
         "id": 4,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task4.md",
-        "img": "",
+        "img": "task.png",
         "title": "RGB To Hex Conversion",
         "tags":["ALGORITHMS", "ENG"],
         "Difficulty": 5,
@@ -156,7 +156,7 @@
     {
         "id": 3,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task3.md",
-        "img": "",
+        "img": "task.png",
         "title": "Regex validate PIN code",
         "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
         "Difficulty": 7,
@@ -166,7 +166,7 @@
     {
         "id": 2,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task2.md",
-        "img": "",
+        "img": "task.png",
         "title": "Count the smiley faces!",
         "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
         "Difficulty": 6,
@@ -176,7 +176,7 @@
     {
         "id": 1,
         "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task1.md",
-        "img": "",
+        "img": "task.png",
         "title": "Which are in?",
         "tags": ["REFACTORING", "ARRAYS", "SEARCH", "ALGORITHMS", "LISTS", "DATA STRUCTURES", "STRINGS", "ENG"],
         "Difficulty": 6,

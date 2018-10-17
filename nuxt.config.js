@@ -1,7 +1,4 @@
 const MYDATA = require ('./data/index.json');
-
-
-
 module.exports = {
   /*
   ** Headers of the page

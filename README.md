@@ -1,6 +1,6 @@
 # my-app
 
-> catalog project
+* catalog project
 
 ## Build Setup
 
