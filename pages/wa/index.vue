@@ -43,7 +43,7 @@ export default {
       let newPhone = phone.replace(/\D+/g,"");
       newPhone = (newPhone.length===11)?newPhone.slice(1):newPhone;     
       this.viewLinks.wa = (newPhone.length===10)?true:false; 
-      this.viewLinks.waLink = 'https://api.whatsapp.com/send?phone='+newPhone;      
+      this.viewLinks.waLink = 'https://api.whatsapp.com/send?phone=7'+newPhone;      
     }
   } 
 }
