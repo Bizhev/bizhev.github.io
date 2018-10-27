@@ -16,6 +16,9 @@ module.exports = {
 
  },
   head: {
+    htmlAttrs: {
+      lang: 'ru'
+    },
     title: 'Долет Бижев | Контакты',
     meta: [
       { charset: 'utf-8' },

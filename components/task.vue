@@ -31,8 +31,7 @@ export default {
 </script>
 <style>
 .task{
-  display: flex;
-  
+  display: flex;  
 }
 .task__image,.task__description{
   display: inline-block;
@@ -48,8 +47,7 @@ export default {
   font-weight: bold;
 }
 .task__description{
-  position: relative;  
-  
+  position: relative;    
 }
 
 </style>

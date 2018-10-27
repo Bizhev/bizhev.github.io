@@ -1,11 +1,13 @@
 <template>
-	<section class="portfolio">    
-    <div class="portfolio__broadcrumb"><nuxt-link :to="'/'">Долет Бижев</nuxt-link></div>
-    <div class="portfolio__search"><Search @handleKeyword="setKeyword" /></div>
-
+	<section class="portfolio">        
+    <Broadcrumb/>
+    <div class="portfolio__search">
+      <Search @handleKeyword="setKeyword" />
+    </div>
+    <!-- <div>Скачать резюме</div> -->
     <div class="portfolio__container">
-      
       <transition-group name="task" class="task-grid">					
+        
         <div v-for="task in searchResultTasks" :key="task.id" class="task-item">
             <Task :task="task"/>				
         </div>
@@ -18,20 +20,33 @@
 import MYDATA from "@/data/index.json";
 import Task from "@/components/task";
 import Search from "@/components/Search";
+import Broadcrumb from "@/components/broadcrumb"
 
-export default {
-  
+export default {  
+
   components: {
     Task,
-    Search
+    Search,
+    Broadcrumb
   },
+  
   data() {
+    // console.log('ok',location.pathname);
+    
     
     return {
       tasks: MYDATA,
       searchString: ""
     };
     
+  },
+  head () {
+    return {
+      title: "Портфолио | Долет Бижев",
+      meta: [        
+        { hid: 'description', name: 'description', content: 'Все работы Долета Бижева, портфолио.' }
+      ]
+    }
   },
   computed: {
     searchResultTasks() {      
@@ -69,16 +84,6 @@ body {
   color: #111;
 }
 
-.portfolio__broadcrumb {
-  padding-left: 5vw;
-  width: 100;
-  /* background-color: #F00;
-  position: absolute; */
-}
-.portfolio__broadcrumb a {
-  text-decoration: none;
-  color: #000;
-}
 .portfolio__search{
   /* background-color: #fff; */
   width: auto;

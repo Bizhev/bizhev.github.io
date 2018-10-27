@@ -1,23 +1,9 @@
 <template>
     <div>
-        <input placeholder="Введите номер телефона"  type="text" v-model="phone">   
-        <a href="">{{phone}}</a>
-
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+        <input class="phone" placeholder="Введите номер телефона"  type="text" v-model="phone">
     </div>
 </template>
 <script>
-function resPhone(s){
-    let link = 'https://api.whatsapp.com/send?phone=';
-    let VRegExp = new RegExp(/^[ ]+/g);
-    let VResult = s.replace(VRegExp, '');
-
-    if (s.length > 9) s = s.slice(s.length-9)
-    return s
-}
 export default {
 
     name: "waComponent",
@@ -26,18 +12,21 @@ export default {
         return {
             phone:""
         }
-        // console.log('==>',resPhone(phone));
-          
-
     }, 
-     async asyncData({ params }) {
-    console.log('=>>');
-    return resPhone(s);
-  }
+    watch:{
+        phone(){
+            this.$emit('handlePhone',this.phone)            
+        }
+
+    }
+
 }
 </script>
 <style>
-
+.phone{
+    padding: 5px;
+    border-radius: 5px;
+}
 </style>
 
 

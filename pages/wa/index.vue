@@ -1,9 +1,10 @@
 <template>
     <div class="container">
-        
-		<h2>{{ title }}</h2>
-        <!-- <input type="text" value="ok"> -->
-    <waComponent></waComponent>
+      <h2>Введите номер:</h2>
+      <waComponent @handlePhone="setPhone"/>
+      <h2>Перейти к чату в:</h2>        
+
+      <a v-if="viewLinks.wa" :href="viewLinks.waLink">ПЕРЕЙТИ В WA</a>
     </div>
 </template>
 
@@ -17,9 +18,8 @@ export default {
   },
 	
    data () {	
-    return { 
-		// project: 'default',
-		title: 'Перейти к чату в:' 
+    return {     
+    viewLinks:{}
 	}
   },
   asyncData (context) {
@@ -32,7 +32,20 @@ export default {
         { hid: 'description', name: 'description', content: 'Создать ссылку на переход к диалогу в соц цети:' }
       ]
     }
-  }  
+  } ,
+  methods: {
+    setPhone(phone){
+      this.viewLinks = {
+        "wa":false,
+        "waLink": "",
+        "telegram":false
+      }
+      let newPhone = phone.replace(/\D+/g,"");
+      newPhone = (newPhone.length===11)?newPhone.slice(1):newPhone;     
+      this.viewLinks.wa = (newPhone.length===10)?true:false; 
+      this.viewLinks.waLink = 'https://api.whatsapp.com/send?phone='+newPhone;      
+    }
+  } 
 }
 </script>
 <style>

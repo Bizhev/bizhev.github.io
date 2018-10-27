@@ -1,26 +1,26 @@
 <template>
     <div>
-      <div class="broadcrumb">
-        <nuxt-link :to="'/'">Долет Бижев</nuxt-link> > <nuxt-link :to="'/portfolio'">портфолио</nuxt-link>
-      </div>
-    <div class="container">
-      <div class="description">
-        <h2 class="title-task"> {{title}}</h2>
-        <h3>Описание</h3>
-        <div>{{description}} </div>
-        <h3>ТЕГИ:</h3>
-        <div>{{tags}}</div>
+      <Broadcrumb/>
 
-        <p v-if=Difficulty><b>difficulty</b>: {{Difficulty}} kyu</p>
-      <p v-if=url><a class="link" :href="''+url">Посмотреть</a></p>
-      <p v-if=github><a class="link" :href="''+github">Помиотреть репозиторий на github</a></p>
-        
+      <div class="container">
+        <div class="description">
+          <h2 class="title-task"> {{title}}</h2>
+          <h3>Описание</h3>
+          <div>{{description}} </div>
+          <h3>ТЕГИ:</h3>
+          <div>{{tags}}</div>
+
+          <p v-if=Difficulty><b>difficulty</b>: {{Difficulty}} kyu</p>
+        <p v-if=url><a class="link" :href="''+url">Посмотреть</a></p>
+        <p v-if=github><a class="link" :href="''+github">Помиотреть репозиторий на github</a></p>
+          
+        </div>
       </div>
-    </div>
     </div>
 </template>
 <script>
 import MYDATA from "../../data/index.json";
+import Broadcrumb from "@/components/broadcrumb.vue"
 
 function getTaskBiId(id, tasks) {
   const result = tasks.filter(task => task.id === id);
@@ -28,10 +28,27 @@ function getTaskBiId(id, tasks) {
 }
 
 export default {
+  components: {
+    Broadcrumb
+  },
   async asyncData({ params }) {
-    let myid = +params.id;
+     let myid = +params.id;    
     return getTaskBiId(myid, MYDATA);
-  }
+  },
+  head () {
+    // console.log('-okkkk',$nuxt.$route.params.id);
+    // console.log('-okkkk',$nuxt.$route.name);
+
+    // console.log('ok',location); 
+    // console.log('ok',location.pathname); 
+    return {
+      title: "-- | Долет Бижев",
+      meta: [        
+        { hid: 'description', name: 'description', content: 'Все работы Долета Бижева, портфолио.' }
+      ]
+    }
+  },
+
 };
 
 </script>
