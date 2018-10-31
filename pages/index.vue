@@ -145,7 +145,7 @@
 	<li class="contact__item">
 		<a href="https://www.instagram.com/bizhevdolet/" target="_blank">
 			<div class="contact__item__icon">
-				<!-- <img :src="'./img/instagram-logo.png'" alt="instagram" /> -->
+
 				<svg version="1.1" x="0px" y="0px" fill="#000000"
 				width="30px" height="30px" viewBox="0 0 100 100">
 				<g>
@@ -230,10 +230,13 @@ h2 {
 	display: inline-block;
 	padding: 5px;
 	text-align: left;
-	width: 250px;
+	width: 260px;
 	border-radius: 10px;
 	height: 60px;
 	/* font-size: 10vh; */
+}
+.contact__item a {	
+	text-decoration: none	
 }
 .contact__item:hover{
  	background-color: #fff; 

@@ -42,7 +42,7 @@ export default {
     // console.log('ok',location); 
     // console.log('ok',location.pathname); 
     return {
-      title: "-- | Долет Бижев",
+      title: "Task | Долет Бижев",
       meta: [        
         { hid: 'description', name: 'description', content: 'Все работы Долета Бижева, портфолио.' }
       ]
