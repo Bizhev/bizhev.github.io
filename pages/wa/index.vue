@@ -1,10 +1,10 @@
 <template>
     <div class="md-layout md-gutter md-alignment-center">
       <md-content class="container__input md-layout-item md-xlarge-size-33  md-large-size-33 md-xsmall-size-100 md-elevation-24">
-          <h2>Генератор ссылок</h2>
-          <p>Показывает ссылки на другие социальные сети по номеру телефона</p>
+          <h2 class="md-title">Генератор ссылок</h2>
+          <p class="md-caption">Показывает ссылки на другие социальные сети по номеру телефона</p>
           <waComponent @handlePhone="setPhone"/>
-          <h2>Перейти к чату в:</h2>        
+          <h2 class="md-subheading">Перейти к чату в:</h2>        
           <md-button class="md-raised md-primary" v-if="viewLinks.wa" :href="viewLinks.waLink">whats app</md-button>
       </md-content>
     </div>
@@ -75,8 +75,8 @@ body {
   border-radius: 5px;
   padding: 10px;
 }
-h2 {
+/* h2 {
   padding-bottom: 10px;
-}
+} */
 </style>
 

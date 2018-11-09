@@ -13,7 +13,8 @@ export default {
     },
     data() {
         let broadcrumbSee = (this.$options.parent.$vnode.data.key=='/portfolio')?false:true;             
-        return {
+        console.log('->',this);
+    return {
             broadcrumbSeeData: broadcrumbSee
         }    
   },

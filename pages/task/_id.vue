@@ -1,11 +1,11 @@
 <template>
     <div>
-      <Broadcrumb/>
-
+      <!-- <Broadcrumb/> -->
+<md-content>
       <div class="container">
         <div class="description">
           <h2 class="title-task"> {{title}}</h2>
-          <h3>Описание</h3>
+          <h3>Описание</h3>          
           <div>{{description}} </div>
           <h3>ТЕГИ:</h3>
           <div>{{tags}}</div>
@@ -16,6 +16,7 @@
           
         </div>
       </div>
+</md-content>
     </div>
 </template>
 <script>
@@ -54,10 +55,10 @@ export default {
 </script>
 <style>
 
-body {
+/* body {
   background: #ccc url(../imgs/img-noise.png) repeat;
   padding-top: 1vw;
-}
+} */
 
 .container {
 	position: relative;

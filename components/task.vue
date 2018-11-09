@@ -1,18 +1,21 @@
 <template>
-        <nuxt-link :to="'/task/'+task.id">
-          <div class="task">
+  <div >
+    <div class="md-layout md-gutter">
 
-              <div class="task__image">
-                <img :src="'/taskposters/'+task.img" alt="">
-              </div>
+      <md-card-media class="md-layout-item md-size-30">
+        <img :src="'/taskposters/'+task.img" alt="">
+      </md-card-media>
 
-              <div class="task__description">                
-              <p class="task__title">{{task.title}}</p>
-                {{task.description}}
-              </div>
-              
-          </div>
-        </nuxt-link>
+      <md-card-header-text  class="md-layout-item">
+        <div class="md-subheading">{{task.title}}</div>
+        <div class="md-subhead">{{task.description}}</div>
+      </md-card-header-text>
+    </div>
+
+    <md-card-actions>
+      <md-button  :to="'/task/'+task.id" class="md-primary">Посмотреть</md-button>
+    </md-card-actions>
+  </div>    
 </template>
 
 <script>
@@ -30,25 +33,6 @@ export default {
 };
 </script>
 <style>
-.task{
-  display: flex;  
-}
-.task__image,.task__description{
-  display: inline-block;
-}
-.task__image {
-  margin: 10px 20px 0 0;
-  position: relative;  
-}
-.task__image img {
-  border-radius: 1em
-}
-.task__title{
-  font-weight: bold;
-}
-.task__description{
-  position: relative;    
-}
 
 </style>
 

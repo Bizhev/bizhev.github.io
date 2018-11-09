@@ -187,8 +187,6 @@ export default {
 	},
 	methods: {    
 		changeImg(s) {
-		
-
 			console.log('ok=>',this);
 		}
 	}
@@ -198,14 +196,12 @@ export default {
 <style>
 body {
 	background: #ccc url(./imgs/img-noise.png) repeat;
-	padding-top: 1vw;
+
 }
 .container {
 	position: relative;
 	text-align: center;
 	color: #111;
-	/* width: fit-content; */
-	/* background-color: #fff; */
 }
 .ava {
 	padding-top: 10vw;
@@ -223,7 +219,7 @@ ul li {
 }
 h2 {
 		font-size: 3vh; 
-	/* font-size: 3vw;  */
+
 }
 .contact__item{	
 	margin: 1.5vh;
@@ -233,7 +229,6 @@ h2 {
 	width: 260px;
 	border-radius: 10px;
 	height: 60px;
-	/* font-size: 10vh; */
 }
 .contact__item a {	
 	text-decoration: none	
@@ -247,7 +242,6 @@ h2 {
 .contact__item .contact__item__description .label {
 	transition: padding 0.3s ease-in-out 0.3s;;
 	display: inline-block;
-	/* background-color: #ccc; */
 	padding-left: 60px;
 }
 .contact__item:hover .contact__item__description .label {
@@ -298,13 +292,6 @@ h2 {
 	display: inline-block;
 	
 }
- /* .ava:hover .ava__img{
-	
-	transform: rotate3d(1, 1, 1, 240deg);
-	 transform: scale(0, 0)
-} */
- 
-
 
 .ava__img img{
 	border-radius: 30%;
