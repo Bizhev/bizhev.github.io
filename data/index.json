@@ -1,5 +1,15 @@
 [   
     {
+        "id": 19,
+        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task11.md",
+        "img": "task.png",
+        "title": "Are they the 'same'?",
+        "tags":["FUNDAMENTALS", "ENG"],
+        "Difficulty": 6,
+        "description": "A common task. Fundamental array handling",
+        "github": ""
+    },
+    {
         "id": 18,
         "url": "https://youtodo.github.io/testForFE/",
         "img": "lose.png",
