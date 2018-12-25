@@ -1,24 +1,26 @@
 <template>
-    <div class="broadcrumb">
-        <nuxt-link  :to="'/'">Долет Бижев</nuxt-link>
-        <span v-if=broadcrumbSeeData> > <nuxt-link :to="'/portfolio'">портфолио</nuxt-link></span>
-    </div>
+  <div class="broadcrumb">
+    <nuxt-link :to="'/'">Долет Бижев</nuxt-link>
+    <span v-if="broadcrumbSeeData"> > <nuxt-link :to="'/portfolio'">портфолио</nuxt-link></span>
+  </div>
 </template>
 <script>
-export default {    
-    props: {
-        broadcrumbSee: {
-            type: Boolean
-        }
-    },
-    data() {
-        let broadcrumbSee = (this.$options.parent.$vnode.data.key=='/portfolio')?false:true;             
-        console.log('->',this);
-    return {
-            broadcrumbSeeData: broadcrumbSee
-        }    
+export default {
+  props: {
+    broadcrumbSee: {
+      type: Boolean,
+      default: false
+    }
   },
-}
+  data() {
+    let broadcrumbSee =
+      this.$options.parent.$vnode.data.key == "/portfolio" ? false : true;
+    console.log("->", this);
+    return {
+      broadcrumbSeeData: broadcrumbSee
+    };
+  }
+};
 </script>
 <style>
 .broadcrumb {

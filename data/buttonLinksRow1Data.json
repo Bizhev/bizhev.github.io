@@ -1,0 +1,26 @@
+[
+  {
+    "id": 3,
+    "icon": "envelope",
+    "title": "Моя почта",
+    "text": "dolet@bizhev.ru",
+    "link": "mailto:dolet@bizhev.ru",
+    "itemprop": "email"
+  },
+  {
+    "id": 2,
+    "icon": "briefcase",
+    "title": "Примеры работ",
+    "text": "Портфолио",
+    "link": "portfolio",
+    "itemprop": "portfolio"
+  },
+  {
+    "id": 1,
+    "icon": "phone-square",
+    "title": "Телефон",
+    "text": "+7 952 987 66 63",
+    "link": "tel:+79529876663",
+    "itemprop": "telephone"
+  }
+]

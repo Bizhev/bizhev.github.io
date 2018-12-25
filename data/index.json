@@ -1,187 +1,250 @@
-[   
-    {
-        "id": 18,
-        "url": "https://youtodo.github.io/testForFE/",
-        "img": "lose.png",
-        "title": "Task for front-end developer",
-        "tags":["canvas"],
-        "Difficulty": 0,
-        "description": " Working with tables, arrays, canvas, etc.",
-        "github": "https://github.com/youtodo/testForFE"
-    },
-    {
-        "id": 17,
-        "url": "",
-        "img": "lose.png",
-        "title": "Test task",
-        "tags":["python"],
-        "Difficulty": 0,
-        "description": "For full stack - developer",
-        "github": "https://github.com/youtodo/python"
-    },
-    {
-        "id": 16,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task10.md",
-        "img": "task.png",
-        "title": "Validate code with simple regex",        
-        "tags":["Fundamentals", "Regular Expressions", "Declarative Programming", "Advanced Language Features", "Strings"],
-        "Difficulty": 8,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 15,
-        "url": "http://bizhev.ru",
-        "img": "bizhev-logo.png",
-        "title": "Nuxt server development SPA",
-        "tags":["vuejs", "SPA", "result"],
-        "Difficulty": 0,
-        "description": "My catalog showing my skills",
-        "github": "https://github.com/Bizhev/bizhev.github.io/tree/vue"
-    },
+[
+  {
+    "id": 16,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task10.md",
+    "img": "task.png",
+    "title": "Validate code with simple regex",
+    "tags": [
+      "Fundamentals",
+      "Regular Expressions",
+      "Declarative Programming",
+      "Advanced Language Features",
+      "Strings"
+    ],
+    "Difficulty": 8,
+    "description": "A common task",
+    "github": "",
+    "fulldescription":"Basic regex tasks. Write a function that takes in a numeric code of any length. The function should check if the code begins with 1, 2, or 3 and return true if so. Return false otherwise.You can assume the input will always be a number.",
+    "idpen":"yGXVEM"
+  },
+  {
+    "id": 15,
+    "url": "http://bizhev.ru",
+    "img": "bizhev-logo.png",
+    "title": "Nuxt server development SPA",
+    "tags": ["vuejs", "SPA", "result"],
+    "Difficulty": 0,
+    "description": "My catalog showing my skills",
+    "github": "https://github.com/Bizhev/bizhev.github.io/tree/vue",
+    "fulldescription":"My catalog showing my skills",
+    "idpen":""
+  },
 
-    {
-        "id": 14,
-        "url": "",
-        "img": "gulp-logo.png",
-        "title": "Gulp - template server",
-        "tags":["template"],
-        "Difficulty": 0,
-        "description": "Server template",
-        "github": "https://github.com/youtodo/g-server"
-    },
- 
-    {
-        "id": 13,
-        "url": "",
-        "img": "webpack.png",
-        "title": "Webpack - template server",
-        "tags":["template"],
-        "Difficulty": 0,
-        "description": "Template server",
-        "github": "https://github.com/youtodo/w-server"
-    },
+  {
+    "id": 14,
+    "url": "",
+    "img": "gulp-logo.png",
+    "title": "Gulp - template server",
+    "tags": ["template"],
+    "Difficulty": 0,
+    "description": "Server template",
+    "github": "https://github.com/youtodo/g-server",
+    "fulldescription":"Server template with use gulp",
+    "idpen":""
+  },
 
-    {
-        "id": 12,
-        "url": "https://youtodo.github.io/test-calendar/",
-        "img": "calendar.png",
-        "title": "Календарь",
-        "tags":["test" ],
-        "Difficulty": 0,
-        "description": "Тестовое задание для разработчика frontend, календарь",
-        "github": "https://github.com/youtodo/test-calendar"
-    },
+  {
+    "id": 13,
+    "url": "",
+    "img": "webpack.png",
+    "title": "Webpack - template server",
+    "tags": ["template"],
+    "Difficulty": 0,
+    "description": "Template server",
+    "github": "https://github.com/youtodo/w-server",
+    "fulldescription":"Template server on webpack",
+    "idpen":""
+  },
 
-    {
-        "id": 11,
-        "url": "https://youtodo.github.io/img-scale/",
-        "img": "waves.png",
-        "title": "PIXI - IMG - WAVES",
-        "tags":["waves", "observe", "RU", "result"],
-        "Difficulty": 0,
-        "description": "Появление картинок, observe, эфект при наведении на картинок",
-        "github": "https://github.com/youtodo/img-scale"
-    },
-    {
-        "id": 10,
-        "url": "https://youtodo.github.io/pixi-oblique/",
-        "img": "lose.png",
-        "title": "Transition oblique",
-        "tags":["pixi.js", "pubsub-js", "gsap", "gulp", "spa", "result", "RU"],
-        "Difficulty": 0,
-        "description": "SPA, наклонный переход страниц, эфект после скрола. ",
-        "github": "https://github.com/youtodo/pixi-oblique"
-    },   
-    {
-        "id": 9,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task9.md",
-        "img": "task.png",
-        "title": "The Hashtag Generator",
-        "tags":["ALGORITHMS", "STRINGS", "ENG"],
-        "Difficulty": 5,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 8,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task8.md",
-        "img": "task.png",
-        "title": "Exclamation marks series #11",
-        "tags":["FUNDAMENTALS", "ENG"],
-        "Difficulty": 8,
-        "description": "A common task. Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel",
-        "github": ""
-    },
-    {
-        "id": 7,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task7.md",
-        "img": "task.png",
-        "title": "Simple Pig Latin",
-        "tags":["ALGORITHMS", "ENG"],
-        "Difficulty": 5,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 6,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task6.md",
-        "img": "task.png",
-        "title": "Regex count lowercase letters",
-        "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ALGORITHMS", "ENG"],
-        "Difficulty": 6,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 5,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task5.md",
-        "img": "task.png",
-        "title": "A Chain adding function",
-        "tags":["PUZZLES", "ARITHMETIC", "MATHEMATICS", "ALGORITHMS", "NUMBERS", "FUNCTIONS", "CONTROL FLOW", "BASIC LANGUAGE FEATURES", "FUNDAMENTALS", "ADVANCED LANGUAGE FEATURES", "FUNCTIONAL PROGRAMMING", "DECLARATIVE PROGRAMMING", "ENG"],
-        "Difficulty": 5,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 4,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task4.md",
-        "img": "task.png",
-        "title": "RGB To Hex Conversion",
-        "tags":["ALGORITHMS", "ENG"],
-        "Difficulty": 5,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 3,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task3.md",
-        "img": "task.png",
-        "title": "Regex validate PIN code",
-        "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
-        "Difficulty": 7,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 2,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task2.md",
-        "img": "task.png",
-        "title": "Count the smiley faces!",
-        "tags":["FUNDAMENTALS", "REGULAR EXPRESSIONS", "DECLARATIVE PROGRAMMING", "ADVANCED LANGUAGE FEATURES", "STRINGS", "ENG"],
-        "Difficulty": 6,
-        "description": "A common task",
-        "github": ""
-    },
-    {
-        "id": 1,
-        "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task1.md",
-        "img": "task.png",
-        "title": "Which are in?",
-        "tags": ["REFACTORING", "ARRAYS", "SEARCH", "ALGORITHMS", "LISTS", "DATA STRUCTURES", "STRINGS", "ENG"],
-        "Difficulty": 6,
-        "description": "The task of using arrays in javascript",
-        "github": ""
+  {
+    "id": 12,
+    "url": "",
+    "img": "calendar.png",
+    "title": "Календарь",
+    "tags": ["test"],
+    "Difficulty": 0,
+    "description": "",
+    "github": "",
+    "fulldescription":"",
+    "idpen":""
+  },
 
-    }
+  {
+    "id": 11,
+    "url": "https://youtodo.github.io/img-scale/",
+    "img": "waves.png",
+    "title": "PIXI - IMG - WAVES",
+    "tags": ["waves", "observe", "RU", "result"],
+    "Difficulty": 0,
+    "description": "Появление картинок, observe, эфект при наведении на картинок",
+    "github": "https://github.com/youtodo/img-scale",
+    "fulldescription":"Появление картинок, observe, эфект при наведении на картинок",
+    "idpen":""
+  },
+  {
+    "id": 10,
+    "url": "https://youtodo.github.io/pixi-oblique/",
+    "img": "lose.png",
+    "title": "Transition oblique",
+    "tags": ["pixi.js", "pubsub-js", "gsap", "gulp", "spa", "result", "RU"],
+    "Difficulty": 0,
+    "description": "SPA, наклонный переход страниц, эфект после скрола. ",
+    "github": "https://github.com/youtodo/pixi-oblique",
+    "fulldescription":"<ul>   <li>Пример приложения SPA</li>   <li>Наклонный переход страниц</li>   <li>Эфект после скрола</li> </ul>",
+    "idpen":""
+  },
+  {
+    "id": 9,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task9.md",
+    "img": "task.png",
+    "title": "The Hashtag Generator",
+    "tags": ["ALGORITHMS", "STRINGS", "ENG"],
+    "Difficulty": 5,
+    "description": "A common task",
+    "github": "",     
+    "fulldescription":"<p>The marketing team are spending way too much time typing in hashtags. Let's help them with out own Hashtag Generator!</p>  <h3>Here's the deal:</h3> <ul> <li>If the final result is longer than 140 chars it must return false.</li> <li>If the input is a empty string it must return false.</li> <li>It must start with a hashtag (#).</li> <li>All words must have their first letter capitalized.</li> </ul> <h3>Example Input to Output:</h3> <code>'Hello there thanks for trying my Kata' => '#HelloThereThanksForTryingMyKata'\n 'Hello World ' => '#HelloWorld' </code>",
+    "idpen": "YdQpGO"
+  },
+  {
+    "id": 8,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task8.md",
+    "img": "task.png",
+    "title": "Exclamation marks series #11",
+    "tags": ["FUNDAMENTALS", "ENG"],
+    "Difficulty": 8,
+    "description": "A common task. Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel",
+    "github": "",
+    "fulldescription":"<p>Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.</p>  <h3>Examples</h3> <code>replace('Hi!') === 'H!!'\n replace('!Hi! Hi!') === '!H!! H!!'\n replace('aeiou') === '!!!!!'\n replace('ABCDE') === '!BCD!'\n </code>",
+    "idpen": "YdQpqj"
+  },
+  {
+    "id": 7,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task7.md",
+    "img": "task.png",
+    "title": "Simple Pig Latin",
+    "tags": ["ALGORITHMS", "ENG"],
+    "Difficulty": 5,
+    "description": "A common task",
+    "github": "",
+    "fulldescription":"Move the first letter of each word to the end of it, then add \"ay\" to the end of the word. Leave punctuation marks untouched.  <h3>Examples</h3> <code>pigIt('Pig latin is cool'); //igPay atinlay siay oolcay\n pigIt('Hello world!');     //elloHay orldWay!\n</code>",
+    "idpen": "PXjboX"
+  },
+  {
+    "id": 6,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task6.md",
+    "img": "task.png",
+    "title": "Regex count lowercase letters",
+    "tags": [
+      "FUNDAMENTALS",
+      "REGULAR EXPRESSIONS",
+      "DECLARATIVE PROGRAMMING",
+      "ADVANCED LANGUAGE FEATURES",
+      "STRINGS",
+      "ALGORITHMS",
+      "ENG"
+    ],
+    "Difficulty": 6,
+    "description": "A common task",
+    "github": "",
+    "fulldescription":"<p> Your task is simply to count the total number of lowercase letters in a string. </p> <h3>Examples</h3><code>lowercaseCount('abc'); ===> 3\n lowercaseCount('abcABC123'); ===> 3\n\n lowercaseCount('abcABC123!@€£#$%^&*()_-+=}{[]|':;?/>.,~'); ===> 3\n lowercaseCount(''); ===> 0\n lowercaseCount('ABC123!@€£#$%^&*()_-+=}{[]|\\':;?/>.,~'); ===> 0\n\n lowercaseCount('abcdefghijklmnopqrstuvwxyz'); ===> 26  </code> ",
+    "idpen": "VqbJgj"
+    
+  },
+  {
+    "id": 5,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task5.md",
+    "img": "task.png",
+    "title": "A Chain adding function",
+    "tags": [
+      "PUZZLES",
+      "ARITHMETIC",
+      "MATHEMATICS",
+      "ALGORITHMS",
+      "NUMBERS",
+      "FUNCTIONS",
+      "CONTROL FLOW",
+      "BASIC LANGUAGE FEATURES",
+      "FUNDAMENTALS",
+      "ADVANCED LANGUAGE FEATURES",
+      "FUNCTIONAL PROGRAMMING",
+      "DECLARATIVE PROGRAMMING",
+      "ENG"
+    ],
+    "Difficulty": 5,
+    "description": "A common task",
+    "github": "",
+    "fulldescription":"We want to create a function that will add numbers together when called in succession. <code>add(1)(2);\n // returns 3</code><p> We also want to be able to continue to add numbers to our chain. </p><code>add(1)(2)(3); // 6\n add(1)(2)(3)(4); // 10\n add(1)(2)(3)(4)(5); // 15\n</code><p>and so on. A single call should return the number passed in. </p> <code>add(1); // 1</code><p>We should be able to store the returned values and reuse them. </p><code>var addTwo = add(2);\n addTwo; // 2\n addTwo + 5; // 7\n addTwo(3); // 5\n addTwo(3)(5); // 10\n</code><p> We can assume any number being passed in will be valid whole number.</p>",
+    "idpen": "yGXawy"
+  },
+  {
+    "id": 4,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task4.md",
+    "img": "task.png",
+    "title": "RGB To Hex Conversion",
+    "tags": ["ALGORITHMS", "ENG"],
+    "Difficulty": 5,
+    "description": "A common task",
+    "github": "",
+    "fulldescription":"The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value. <h3>The following are examples of expected output values:</h3> <code>rgb(255, 255, 255) // returns FFFFFF\n rgb(255, 255, 300) // returns FFFFFF\n rgb(0,0,0) // returns 000000\n rgb(148, 0, 211) // returns 9400D3\n<code>", 
+    "idpen": "BvZLPq"
+  },
+  {
+    "id": 3,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task3.md",
+    "img": "task.png",
+    "title": "Regex validate PIN code",
+    "tags": [
+      "FUNDAMENTALS",
+      "REGULAR EXPRESSIONS",
+      "DECLARATIVE PROGRAMMING",
+      "ADVANCED LANGUAGE FEATURES",
+      "STRINGS",
+      "ENG"
+    ],
+    "Difficulty": 7,
+    "description": "A common task",
+    "github": "",
+    "fulldescription":"ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the function is passed a valid PIN string, return true, else return false. <h3>Examples:</h3><code>validatePIN('1234') === true\n validatePIN('12345') === false\n validatePIN('a234') === false\n</code>",
+    "idpen": "EGXgoK"
+  },
+  {
+    "id": 2,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task2.md",
+    "img": "task.png",
+    "title": "Count the smiley faces!",
+    "tags": [
+      "FUNDAMENTALS",
+      "REGULAR EXPRESSIONS",
+      "DECLARATIVE PROGRAMMING",
+      "ADVANCED LANGUAGE FEATURES",
+      "STRINGS",
+      "ENG"
+    ],
+    "Difficulty": 6,
+    "description": "A common task",
+    "github": "",
+    "fulldescription":"Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces. <h3>Rules for a smiling face: </h3> <ul>   <li>Each smiley face must contain a valid pair of eyes. Eyes can be marked as : or ;</li>   <li>A smiley face can have a nose but it does not have to. Valid characters for a nose are - or ~</li>   <li>Every smiling face must have a smiling mouth that should be marked with either ) or D. No additional characters are allowed except for those mentioned.</li> </ul> <h3>Valid smiley face examples:</h3> <code>:) :D ;-D :~)</code> <h3>Invalid smiley faces:</h3> <code>;( :> :} :]</code> <h3>Example cases:</h3>     <code>countSmileys([':)', ';(', ';}', ':-D']);      // should return 2;\n countSmileys([';D', ':-(', ':-)', ';~)']);    // should return 3;\n countSmileys([';]', ':[', ';*', ':$', ';-D']);// should return 1;\n </code> <h3>Note:</h3> In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same",
+    "idpen": "vvZXLm"
+  },
+  {
+    "id": 1,
+    "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task1.md",
+    "img": "task.png",
+    "title": "Which are in?",
+    "tags": [
+      "REFACTORING",
+      "ARRAYS",
+      "SEARCH",
+      "ALGORITHMS",
+      "LISTS",
+      "DATA STRUCTURES",
+      "STRINGS",
+      "ENG"
+    ],
+    "Difficulty": 6,
+    "description": "The task of using arrays in javascript",
+    "github": "",
+    "fulldescription":"Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of a1 which are substrings of strings a2.<h3>Example 1:</h3>  <code>a1 = ['arp', 'live', 'strong']\n a2 = ['lively', 'alive', 'harp', 'sharp', 'armstrong']\n returns ['arp', 'live', 'strong'] </code><h3>Example 2:</h3>  <code>a1 = ['tarp', 'mice', 'bull']\n a2 = ['lively', 'alive', 'harp', 'sharp', 'armstrong']\n returns []</code><h3> Notes: </h3><ul>  <li>Arrays are written in 'general' notation. See 'Your Test Cases' for examples in your language.</li>  <li>In Shell bash a1 and a2 are strings. The return is a string where words are separated by commas.</li>  <li>Beware: r must be without duplicates.</li>  <li>Don't mutate the inputs.</li></ul>",
+    "idpen": "rowBJG"
+  }
 ]

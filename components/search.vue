@@ -1,7 +1,11 @@
 <template>
-  <div class="search">  
-      <input placeholder="ПОИСК"  type="text" v-model="keyword">   
-  </div>    
+  <v-text-field
+    v-model="keyword"
+    solo-inverted
+    hide-details
+    label="Поиск"
+    prepend-inner-icon="search"
+  />
 </template>
 
 <script>
@@ -21,16 +25,6 @@ export default {
 </script>
 
 <style lamg="CSS" scoped>
-.search {
-    text-align: left;
-    padding: 30px;
-}
-.search input {
-    padding: 5px;
-    font-size: 10pt;
-    border-radius: 10px;
-    outline: none    
-}
 </style>
 
 

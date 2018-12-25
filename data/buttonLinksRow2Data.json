@@ -1,0 +1,26 @@
+[
+  {
+    "id": 3,
+    "icon": "stroopwafel",
+    "title": "Гитхаб",
+    "text": "Github",
+    "link": "https://github.com/bizhev",
+    "itemprop": "link"
+  },
+  {
+    "id": 2,
+    "icon": "stroopwafel",
+    "title": "Перейти к чату в:",
+    "text": "Telegram",
+    "link": "https://telegram.me/dolet",
+    "itemprop": "link"
+  },
+  {
+    "id": 1,
+    "icon": "stroopwafel",
+    "title": "Инстаграмм",
+    "text": "Instagram",
+    "link": "https://www.instagram.com/bizhevdolet/",
+    "itemprop": "link"
+  }
+]
