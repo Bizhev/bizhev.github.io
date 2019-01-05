@@ -1,11 +1,12 @@
 <template>
   <v-app>
-    <nuxt/>   
+    <nuxt />
     <v-footer 
       color="blue-grey" 
       class="white--text" 
-      app>      
-      <v-spacer/>
+      app
+    >      
+      <v-spacer />
       <span>&copy; {{ new Date().getFullYear() }} Bizhev.ru</span>
     </v-footer>
   </v-app>

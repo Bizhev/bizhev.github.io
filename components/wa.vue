@@ -5,7 +5,6 @@
       sm4 
       md2
     >
-
       <v-text-field     
         v-model="phone" 
         :messages="['Пример: 89181234567']"
@@ -15,8 +14,7 @@
         box
       />
       <!-- append-icon="close" -->
-    </v-flex>
-  
+    </v-flex>  
   </div>
 </template>
 <script>

@@ -1,5 +1,8 @@
 const MYDATA = require("./data/index.json");
 module.exports = {
+  dev: (process.env.NODE_ENV !== 'production'),
+
+  
   /*
    ** Headers of the page
    */
@@ -7,11 +10,12 @@ module.exports = {
     { src: "~plugins/ga.js", ssr: false },
     { src: "~plugins/vuetify.js" },
     // { src: "~plugins/embed.js" },
-    // { src: "~plugins/yandex-metrika.js" },
+    { src: "~plugins/yandex-metrika.js" },
     { src: "~plugins/font-awesome-icon.js" }
   ],
 
   generate: {
+    
     routes: function() {
       let routes = MYDATA.map(task => {
         return "/task/" + task.id;
@@ -20,6 +24,7 @@ module.exports = {
       return routes;
     }
   },
+  
   head: {
     htmlAttrs: {
       lang: "ru"
@@ -53,6 +58,7 @@ module.exports = {
    ** Customize the progress bar color
    */
   loading: { color: "#fff" },
+  
 
   /*
    ** Global CSS
@@ -69,17 +75,17 @@ module.exports = {
     // vendor: ["axios", "vuetify"],
     modules: [
       ["@nuxtjs/axios"],
-      [
-        "@nuxtjs/yandex-metrika",
-        {
-          id: "50035924",
-          webvisor: true
-          // clickmap: true
-          // useCDN:false,
-          // trackLinks:true,
-          // accurateTrackBounce:true,
-        }
-      ]
+      // [
+      //   "@nuxtjs/yandex-metrika",
+      //   {
+      //     id: "50035924",
+      //     webvisor: true
+      //     // clickmap: true
+      //     // useCDN:false,
+      //     // trackLinks:true,
+      //     // accurateTrackBounce:true,
+      //   }
+      // ]
     ],
     /*
      ** Axios module configuration

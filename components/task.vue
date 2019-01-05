@@ -20,19 +20,27 @@
       <v-flex xs8>
         <v-card-title primary-title>
           <div>
-            <div class="title">{{ task.title }}</div>
-            <div class="body-1">{{ task.description }}</div>
+            <div class="title">
+              {{ task.title }} 
+            </div>
+            <div class="body-1">
+              {{ task.description }}
+            </div>
           </div>
         </v-card-title>
       </v-flex>
-      <v-card-actions >      
-        <v-spacer/>
+      <v-card-actions>      
+        <v-spacer />
         <v-btn 
           :to="'/task/'+task.id"
           color="info" 
-        ><v-icon>arrow_forward</v-icon> Посмотреть</v-btn>
+        >
+          <v-icon>
+            arrow_forward
+          </v-icon> 
+          Посмотреть
+        </v-btn>
       </v-card-actions>
-
     </v-card>   
   </v-hover>
 </template>

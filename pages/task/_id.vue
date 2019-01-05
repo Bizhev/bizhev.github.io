@@ -3,9 +3,13 @@
     <!-- <Broadcrumb/> -->
     <div class="container">
       <div class="description">
-        <h2 class="title-task"> {{ title }}</h2>
+        <h2 class="title-task">
+          {{ title }}
+        </h2>
         <h3>Description</h3>
-        <div v-html="fulldescription"/>
+        
+        <!-- eslint-disable-next-line -->
+        <div v-html="fulldescription" />
         <!-- MAIN DESCRIPTION -->
         
         <!-- END DESCRIPTION -->
@@ -13,20 +17,30 @@
         <span             
           v-for="(item, index) in tags"
           :key="index"
-        >{{ item }}<span v-if="(tags.length===index+1)?false:true">, </span> </span>
-
-        <p v-if="Difficulty"><b>difficulty</b>: {{ Difficulty }} kyu</p>
-
+        >
+          {{ item }}
+          <span v-if="(tags.length===index+1)?false:true">
+            , 
+          </span> 
+        </span>
+        <p v-if="Difficulty">
+          <b>difficulty</b>: 
+          {{ Difficulty }} kyu
+        </p>
         <p v-if="github">
           <a 
             :href="github"
             class="link" 
-          >View on github</a>
+          >
+            View on github
+          </a>
           <a 
             v-if="url"
             :href="url"
             class="link" 
-          >DEMO</a>
+          >
+            DEMO
+          </a>
         </p>
 
 
@@ -39,14 +53,25 @@
           data-theme-id="light" 
           data-default-tab="js" 
           data-user="bizhev" 
-          class="codepen">See the Pen 
-          <a :href="'https://codepen.io/bizhev/pen/'+idpen"> {{ title }}</a>
+          class="codepen"
+        >
+          See the Pen 
+          <a :href="'https://codepen.io/bizhev/pen/'+idpen"> 
+            {{ title }}
+          </a>
           by Dolet Bizhev 
-          (<a href="https://codepen.io/bizhev">@bizhev</a>) on <a href="https://codepen.io">CodePen</a>.
+          (<a href="https://codepen.io/bizhev">
+            @bizhev
+          </a>) 
+          on 
+          <a href="https://codepen.io">
+            CodePen
+          </a>.
         </p>        
         <script 
           async 
-          src="https://static.codepen.io/assets/embed/ei.js"/>
+          src="https://static.codepen.io/assets/embed/ei.js"
+        />
       </div>
     </div>
   </div>
@@ -58,7 +83,7 @@ import Vuetify from "vuetify";
 Vue.use(Vuetify);
 
 import MYDATA from "../../data/index.json";
-import Broadcrumb from "@/components/broadcrumb.vue";
+// import Broadcrumb from "@/components/broadcrumb.vue";
 
 function getTaskBiId(id, tasks) {
   const result = tasks.filter(task => task.id === id);
@@ -67,7 +92,7 @@ function getTaskBiId(id, tasks) {
 
 export default {
   components: {
-    Broadcrumb
+    // Broadcrumb
   },
   async asyncData({ params }) {
     let myid = +params.id;

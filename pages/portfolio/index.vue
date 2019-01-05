@@ -11,14 +11,13 @@
       <v-list
         dense
         class="grey lighten-4"
-      >        
-        
+      >      
         <v-layout
           align-center
         >
           <v-flex xs12>
             <v-subheader>
-              Фильтр (Скоро все заработает...)
+              Фильтр 
             </v-subheader>
           </v-flex>
         </v-layout>
@@ -28,22 +27,26 @@
         />
         <v-container fluid>
           <v-checkbox 
-            :label="`Решение алгоритмических задач`" 
             v-model="searchSettings.taskAlgoritm"
+            :label="`Решение алгоритмических задач `" 
           />
           <v-checkbox 
-            :label="`Закончекные проекты`" 
             v-model="searchSettings.taskEnd"
+            :label="`Закончекные проекты `" 
           />
           <v-checkbox 
-            :label="`Интерестные приемы`" 
             v-model="searchSettings.taskInteres"
+            :label="`Интерестные приемы `" 
           />
           <v-checkbox 
-            :label="`Верстка`" 
             v-model="searchSettings.taskVerstka"
+            :label="`Верстка `" 
           />
-        </v-container>
+          <v-checkbox 
+            v-model="searchSettings.taskAll"
+            :label="`Показать всё`" 
+          />
+        </v-container>        
       </v-list>
     </v-navigation-drawer>
 
@@ -58,10 +61,15 @@
         v-if="true" 
         @click.native="drawer = !drawer"
       />
-      <span class="title ml-3 mr-5">Портфолио</span>
+
+      <span class="title ml-3 mr-5">
+        Портфолио
+      </span>
+
       <Search @handleKeyword="setKeyword" />      
-      <v-spacer/>
-      
+
+      <v-spacer />
+
       <v-menu 
         offset-y
       >
@@ -82,14 +90,16 @@
               class="white--text"      
             >
               {{ item.title }}
+
               <v-icon 
                 right 
-              >cloud_download</v-icon>
+              >
+                cloud_download
+              </v-icon>
             </v-btn>
           </v-list-tile>
         </v-list>
-      </v-menu>       
-    
+      </v-menu>   
     </v-toolbar>
     <v-content>
       <v-card>
@@ -98,17 +108,14 @@
           grid-list-md 
           text-xs-left          
         >
-
           <v-layout wrap>       
-
             <v-flex
               v-for="task in searchResultTasks"
               :key="task.id"
               class="task-item"
             >
-              <Task :task="task"/>  
-            </v-flex>          
-            
+              <Task :task="task" />  
+            </v-flex>                      
           </v-layout>
         </v-container>
       </v-card>
@@ -119,7 +126,7 @@
 import MYDATA from "@/data/index.json";
 import Task from "@/components/task";
 import Search from "@/components/Search";
-import Broadcrumb from "@/components/broadcrumb";
+// import Broadcrumb from "@/components/broadcrumb";
 
 export default {
   head() {
@@ -140,8 +147,8 @@ export default {
   },
   components: {
     Task,
-    Search,
-    Broadcrumb
+    Search
+    // Broadcrumb
   },
   props: {
     source: {
@@ -162,7 +169,8 @@ export default {
         taskAlgoritm: false,
         taskEnd: false,
         taskInteres: false,
-        taskVerstka: false
+        taskVerstka: false,
+        taskAll: true
       })
     }
   },
@@ -185,11 +193,47 @@ export default {
     searchResultTasks() {
       let keyword = this.searchString.toLowerCase();
       let results = this.tasks.filter(task => {
-        if (task.title.toLowerCase().indexOf(keyword) !== -1) return task;
+        // filters
+        // searchSettings = {
+        //   taskAlgoritm: false (ENG),
+        //   taskEnd: false (isComplited),
+        //   taskInteres: false (isOK),
+        //   taskVerstka: false (Verstka)
+        // }
+        let isSearchSettings = false;
+        
+        if ((this.searchSettings.taskAlgoritm) && (
+          task.tags.filter(tag => tag.toLowerCase().indexOf('eng') !== -1)
+            .length > 0
+        )) isSearchSettings = true;
+
+        if ((this.searchSettings.taskEnd) && (
+          task.tags.filter(tag => tag.toLowerCase().indexOf('iscomplited') !== -1)
+            .length > 0
+        )) isSearchSettings = true;
+
+        if ((this.searchSettings.taskInteres) && (
+          task.tags.filter(tag => tag.toLowerCase().indexOf('isok') !== -1)
+            .length > 0
+        )) isSearchSettings = true;
+
+        if ((this.searchSettings.taskVerstka) && (
+          task.tags.filter(tag => tag.toLowerCase().indexOf('verstka') !== -1)
+            .length > 0
+        )) isSearchSettings = true;
+
+        if (this.searchSettings.taskAll) isSearchSettings = true;
+        
+        // others
         if (
+          (task.title.toLowerCase().indexOf(keyword) !== -1) &&
+          (isSearchSettings)
+        ) return task;
+        if ((
           task.tags.filter(tag => tag.toLowerCase().indexOf(keyword) !== -1)
             .length > 0
-        )
+        ) &&
+        (isSearchSettings))
           return task;
         return false;
       });
@@ -209,10 +253,6 @@ export default {
   methods: {
     setKeyword(keyword) {
       this.searchString = keyword;
-    },
-    test(index) {
-      console.log("THIS=>", this);
-      console.log("INDEX", index);
     }
   }
 };

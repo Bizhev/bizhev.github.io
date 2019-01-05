@@ -2,13 +2,15 @@
   <div>
     <h2>Генератор ссылок</h2>
     <p>Показывает ссылки на другие социальные сети по номеру телефона</p>
-    <WaComponent @handlePhone="setPhone"/>
+    <WaComponent @handlePhone="setPhone" />
     <h2>Перейти к чату в:</h2>        
     <v-btn
       v-if="viewLinks.wa" 
       :href="viewLinks.waLink"
       color="success"
-    >whats app</v-btn>
+    >
+      whats app
+    </v-btn>
   </div>
 </template>
 

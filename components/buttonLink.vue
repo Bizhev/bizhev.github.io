@@ -3,16 +3,19 @@
     <a :href="link">
       <div class="contact__item__icon">      
         <font-awesome-layers class="fa-2x">
-          <font-awesome-icon :icon="icon"/>
+          <font-awesome-icon :icon="icon" />
         </font-awesome-layers>
       </div>
       <div class="contact__item__description">
-        <div 
-          class="label">{{ title }}</div>
+        <div class="label">
+          {{ title }}
+        </div>
         <div 
           :itemprop="itemprop"
           class="value" 
-        >{{ text }}</div>
+        >
+          {{ text }}
+        </div>
       </div>
     </a>
   </div>

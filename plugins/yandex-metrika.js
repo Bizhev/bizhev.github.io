@@ -11,9 +11,14 @@ let routes = function() {
 };
 const router = new VueRouter(routes); // your routes
 
-Vue.use(VueYandexMetrika, {
-  id: 50035924,
-  router: router,
-  env: process.env.NODE_ENV
-  // other options
-});
+// process.env.NODE_ENV = 'production'
+// console.log('==>',process.env.NODE_ENV);
+if (process.client) {
+  Vue.use(VueYandexMetrika, {
+    id: 50035924,
+    router: router,
+    env: process.env.NODE_ENV
+    // env: process.env.NODE_ENV
+    // other options
+  });
+}

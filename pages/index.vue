@@ -2,12 +2,15 @@
   <v-content>
     <v-container 
       fluid 
-      fill-height>
+      fill-height
+    >
       <v-layout 
         justify-center 
-        align-center>
+        align-center
+      >
         <v-flex 
-          shrink>  
+          shrink
+        >  
           <section class="container">
             <div 
               id="chImg"
@@ -23,7 +26,9 @@
                   alt="Dolet Bizhev"          
                 >
               </v-avatar>
-              <h2 class="display-1">Долет Бижев</h2>      
+              <h2 class="display-1">
+                Долет Бижев
+              </h2>      
             </div>
             <ul class="contact-list">
               <li 
