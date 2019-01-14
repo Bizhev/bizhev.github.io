@@ -15,22 +15,27 @@
             <div 
               id="chImg"
               class="ava"
-              @click="changeImg"  
             >
+              <!-- eslint-disable-->
               <v-avatar
                 :size="200"
+                xs12
+                sm6
+                md8
                 color="grey lighten-4"
+                @click="changeImg"                                  
               >
                 <img 
-                  :src="img_now"        
-                  alt="Dolet Bizhev"          
+                  :class="{ava__animation: isAvaClass}" 
+                  :src="img_now" 
+                  alt="Dolet Bizhev"
                 >
               </v-avatar>
-              <h2 class="display-1">
-                Долет Бижев
-              </h2>      
+              
+              <!-- eslint-enable-->
+              <h2>Долет Бижев</h2>      
             </div>
-            <ul class="contact-list">
+            <ul class="contact__list">
               <li 
                 v-for="item in massLinks1" 
                 :key="item.id" 
@@ -46,7 +51,7 @@
               </li>
             </ul>
             <!-- Второй блок -->
-            <ul class="contact-list">
+            <ul class="contact__list">
               <li 
                 v-for="item in massLinks2" 
                 :key="item.id" 
@@ -76,53 +81,98 @@ export default {
     ButtonLink
   },
   head() {
-    // console.log('-okkkk',$nuxt.$route.params.id);
-    // console.log('-okkkk',$nuxt.$route.name);
 
-    // console.log('ok',location);
-    // console.log('ok',location.pathname);
     return {
       meta: [
         { name: "description", content: "Основные контакты с Долетом Бижевым." }
       ]
     };
   },
+  props: {
+    isChangeAva: {
+      type:Boolean,
+      default:true
+    }
+  },
 
   data() {
-    return {
-      img1: "/22.png",
-      img2: "/3.png",
-      img3: "/444.png",
+    return {      
       img_now: "/22.png",
-      img_next: "/3.png",
-      img_class_now: "ava__img",
-      img_class_next: "ava__img2",
-      avaImg: "ava__img",
-      avaImg2: "ava__img2",
+      img: ["/22.png","/3.png","/444.jpg"],
+      imgIndex:1,
+      isAvaClass: false,
       massLinks1: buttonLinks1Data,
       massLinks2: buttonLinks2Data
     };
   },
+
   methods: {
-    changeImg: function(s) {
-      // this.img_now = this.img2;
+    changeImg: function() {
+      if (!this.isAvaClass) {
+        this.isAvaClass=true;
+        setTimeout(()=>{
+            if (this.isChangeAva) {
+              if (this.img.length<=this.imgIndex) this.imgIndex = 0
+              this.img_now = this.img[this.imgIndex++]
+            }
+        },300)
+        // после начала анимации через 300ms начинаю менять картинку
+        setTimeout(()=>{
+          this.isAvaClass = false;
+          this.isChangeAva = true
+        },750)
+        // 750 - это скорость выполнения анимации, ждем пока не выполнится.
+      }
     }
+
+
+    
   }
 };
 </script>
 <style>
+/*BEGIN typography*/ 
+/*   */ 
+body {
+  /* font-family: 'Podkova', serif; */
+  font-family: 'Roboto Slab', serif;
+}
+h1,h2,h3 {
+  font-family: 'Podkova', serif;
+}
+h2 {
+  font-size: 3rem
+}
+/*END typography*/ 
+/*BEGIN elements*/ 
+.ava {
+  padding-bottom: 2vh;
+  display: inline-block;
+}
+
+.ava__animation{
+  transform: rotate3d(0, 1, 0, -360deg);
+  transition: transform 0.7s;
+}
+
+/* .img2:active {
+  transform: rotate3d(0, 1, 0, -360deg);
+  transition: transform 0.7s;
+} */
+
+/*END elements*/ 
 .container {
   position: relative;
   text-align: center;
   color: #111;
 }
 
-.ava {
-  padding-bottom: 2vh;
-  display: inline-block;
+.ava img:hover,
+.ava img:hover {
+  cursor: pointer;
 }
 
-.ava__img img {
+/* .ava__img img {
   border-radius: 30%;
   height: 13vw;
   min-height: 130px;
@@ -139,9 +189,26 @@ export default {
   display: inline-block;
   transform: rotate3d(0, 1, 0, +360deg);
   transition: transform 0.7s;
+} */
+
+@media (max-width: 1264px) {
+.contact__item {
+  display: block;
 }
-.ava__img2 img:hover,
-.ava__img img:hover {
-  cursor: pointer;
+
+}
+@media (max-width: 640px) {
+  /*BEGIN tipography*/ 
+  /*   */ 
+  h2 {
+    font-size: 2rem;
+  } 
+  .contact__item {
+    display: block;
+    
+  }
+
+/*END tipography*/ 
+
 }
 </style>

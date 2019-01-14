@@ -7,7 +7,7 @@
       app
     >      
       <v-spacer />
-      <span>&copy; {{ new Date().getFullYear() }} Bizhev.ru</span>
+      <span>&copy; 2018 - {{ new Date().getFullYear() }} Bizhev.ru</span>
     </v-footer>
   </v-app>
 </template>
@@ -18,3 +18,10 @@ export default {
   data: () => ({})
 };
 </script>
+<style>
+/*BEGIN main*/ 
+/*   */ 
+
+/*END main*/ 
+</style>
+

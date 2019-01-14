@@ -26,7 +26,7 @@
           class="my-1"
         />
         <v-container fluid>
-          <v-checkbox 
+          <!-- <v-checkbox 
             v-model="searchSettings.taskAlgoritm"
             :label="`Решение алгоритмических задач `" 
           />
@@ -45,7 +45,16 @@
           <v-checkbox 
             v-model="searchSettings.taskAll"
             :label="`Показать всё`" 
-          />
+          /> -->
+          <v-flex 
+            d-flex
+          >
+            <v-select
+              v-model="yselect"
+              :items="searchSettingsItems"
+              label="Показать"
+            />
+          </v-flex>
         </v-container>        
       </v-list>
     </v-navigation-drawer>
@@ -128,6 +137,13 @@ import Task from "@/components/task";
 import Search from "@/components/Search";
 // import Broadcrumb from "@/components/broadcrumb";
 
+function searchSettingsItemsToTags (orignMass,originObj,str){
+  originForEach((e,i)=>{
+    console.log('==>',originObj[i])
+    if (str==e) return originObj[i]
+  })  
+}
+
 export default {
   head() {
     return {
@@ -163,18 +179,30 @@ export default {
       type: String,
       default: ""
     },
-    searchSettings: {
-      type: Object,
-      default: () => ({
-        taskAlgoritm: false,
-        taskEnd: false,
-        taskInteres: false,
-        taskVerstka: false,
-        taskAll: true
-      })
+    searchSettingsItems: {
+      type: Array,
+      default: () => [
+        'решение алгоритмических задач',
+        'законченные проекты',
+        'интерестные приемы',
+        'верстку',
+        'все'
+      ]},
+    searchSettingsItemsTags: {
+      type: Array,
+      default: () => [
+        'taskAlgoritm',
+        'taskEnd',
+        'taskInteres',
+        'taskVerstka',
+        'all'
+      ]
     }
   },
   data: () => ({
+    yselect: 'selected',
+    // filterSelect:searchSettingsItemsToTags(searchSettingsItems,searchSettingsItemsTags),
+    filterSelect:'g',
     tasks: MYDATA,
     downloadResumeFormats: [
       {
@@ -200,29 +228,33 @@ export default {
         //   taskInteres: false (isOK),
         //   taskVerstka: false (Verstka)
         // }
-        let isSearchSettings = false;
+        let isSearchSettings = true;
         
-        if ((this.searchSettings.taskAlgoritm) && (
-          task.tags.filter(tag => tag.toLowerCase().indexOf('eng') !== -1)
-            .length > 0
-        )) isSearchSettings = true;
+        // if ((this.searchSettings.taskAlgoritm) && (
+        //   task.tags.filter(tag => tag.toLowerCase().indexOf('eng') !== -1)
+        //     .length > 0
+        // )) isSearchSettings = true;
 
-        if ((this.searchSettings.taskEnd) && (
-          task.tags.filter(tag => tag.toLowerCase().indexOf('iscomplited') !== -1)
-            .length > 0
-        )) isSearchSettings = true;
+        // if ((this.searchSettings.taskEnd) && (
+        //   task.tags.filter(tag => tag.toLowerCase().indexOf('iscomplited') !== -1)
+        //     .length > 0
+        // )) isSearchSettings = true;
 
-        if ((this.searchSettings.taskInteres) && (
-          task.tags.filter(tag => tag.toLowerCase().indexOf('isok') !== -1)
-            .length > 0
-        )) isSearchSettings = true;
+        // if ((this.searchSettings.taskInteres) && (
+        //   task.tags.filter(tag => tag.toLowerCase().indexOf('isok') !== -1)
+        //     .length > 0
+        // )) isSearchSettings = true;
 
-        if ((this.searchSettings.taskVerstka) && (
-          task.tags.filter(tag => tag.toLowerCase().indexOf('verstka') !== -1)
-            .length > 0
-        )) isSearchSettings = true;
+        // if ((this.searchSettings.taskVerstka) && (
+        //   task.tags.filter(tag => tag.toLowerCase().indexOf('verstka') !== -1)
+        //     .length > 0
+        // )) isSearchSettings = true;
 
-        if (this.searchSettings.taskAll) isSearchSettings = true;
+
+        // if (this.searchSettings.taskAll) isSearchSettings = true;
+
+
+
         
         // others
         if (

@@ -9,10 +9,10 @@
   },
   {
     "id": 2,
-    "icon": "briefcase",
-    "title": "Примеры работ",
-    "text": "Портфолио",
-    "link": "portfolio",
+    "icon": "stroopwafel",
+    "title": "Пишу о всяком...",
+    "text": "Блог",
+    "link": "blog",
     "itemprop": "portfolio"
   },
   {
