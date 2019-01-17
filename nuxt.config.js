@@ -11,7 +11,8 @@ module.exports = {
     { src: "~plugins/vuetify.js" },
     // { src: "~plugins/embed.js" },
     { src: "~plugins/yandex-metrika.js" },
-    { src: "~plugins/font-awesome-icon.js" }
+    { src: "~plugins/font-awesome-icon.js" },
+    { src: "~plugins/change-ava.js",ssr: false }
   ],
 
   generate: {

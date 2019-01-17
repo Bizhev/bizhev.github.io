@@ -35,10 +35,10 @@
           :to="'/task/'+task.id"
           color="info" 
         >
+          Хочу Посмотреть
           <v-icon>
             arrow_forward
           </v-icon> 
-          Посмотреть
         </v-btn>
       </v-card-actions>
     </v-card>   

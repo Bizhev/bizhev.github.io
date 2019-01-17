@@ -98,7 +98,7 @@ export default {
   data() {
     return {      
       img_now: "/22.png",
-      img: ["/22.png","/3.png","/444.jpg"],
+      img: ["/22.png","/444.jpg","/4.jpg","/9.jpg"],
       imgIndex:1,
       isAvaClass: false,
       massLinks1: buttonLinks1Data,

@@ -27,23 +27,23 @@
         />
         <v-container fluid>
           <!-- <v-checkbox 
-            v-model="searchSettings.taskAlgoritm"
+            v-model="searchSettings.algoritm"
             :label="`Решение алгоритмических задач `" 
           />
           <v-checkbox 
-            v-model="searchSettings.taskEnd"
+            v-model="searchSettings.end"
             :label="`Закончекные проекты `" 
           />
           <v-checkbox 
-            v-model="searchSettings.taskInteres"
+            v-model="searchSettings.interes"
             :label="`Интерестные приемы `" 
           />
           <v-checkbox 
-            v-model="searchSettings.taskVerstka"
+            v-model="searchSettings.verstka"
             :label="`Верстка `" 
           />
           <v-checkbox 
-            v-model="searchSettings.taskAll"
+            v-model="searchSettings.all"
             :label="`Показать всё`" 
           /> -->
           <v-flex 
@@ -52,7 +52,11 @@
             <v-select
               v-model="yselect"
               :items="searchSettingsItems"
-              label="Показать"
+              label="Показать"              
+              outline
+              item-text="tText"
+              item-value="tValue"              
+              @change="setSelected(yselect)"
             />
           </v-flex>
         </v-container>        
@@ -117,14 +121,19 @@
           grid-list-md 
           text-xs-left          
         >
-          <v-layout wrap>       
-            <v-flex
-              v-for="task in searchResultTasks"
-              :key="task.id"
-              class="task-item"
+          <v-layout wrap>   
+            <transition-group 
+              name="task"
+              class="task-grid"
             >
-              <Task :task="task" />  
-            </v-flex>                      
+              <v-flex
+                v-for="task in searchResultTasks"
+                :key="task.id"
+                class="task-item"
+              >
+                <Task :task="task" />  
+              </v-flex>     
+            </transition-group>                 
           </v-layout>
         </v-container>
       </v-card>
@@ -171,38 +180,14 @@ export default {
       type: String,
       default: "o"
     },
-    searchString: {
-      type: String,
-      default: ""
-    },
     keyword: {
       type: String,
       default: ""
-    },
-    searchSettingsItems: {
-      type: Array,
-      default: () => [
-        'решение алгоритмических задач',
-        'законченные проекты',
-        'интерестные приемы',
-        'верстку',
-        'все'
-      ]},
-    searchSettingsItemsTags: {
-      type: Array,
-      default: () => [
-        'taskAlgoritm',
-        'taskEnd',
-        'taskInteres',
-        'taskVerstka',
-        'all'
-      ]
     }
   },
   data: () => ({
-    yselect: 'selected',
+    yselect:"",
     // filterSelect:searchSettingsItemsToTags(searchSettingsItems,searchSettingsItemsTags),
-    filterSelect:'g',
     tasks: MYDATA,
     downloadResumeFormats: [
       {
@@ -214,6 +199,33 @@ export default {
         href: "/resume/resume_bizhev_d_z.pdf"
       }
     ],
+    searchSettingsItems: [       
+        { 
+          tText: 'решение алгоритмических задач',
+          tValue: 'algoritm'
+        },
+        {
+          tText: 'законченные проекты',
+          tValue: 'end'          
+        },        
+        {
+          tText: 'интерестные приемы',
+          tValue: 'interes'        
+        },
+        {
+          tText: 'которые сейчас в разработке',
+          tValue: 'inDeveloping'        
+        },
+        { 
+          tText: 'верстку',
+          tValue: 'verstka'
+        },        
+        {
+          tText: 'все',
+          tValue: 'all'
+        }
+      ],    
+      searchString: "",
     checkbox: null,
     drawer: null
   }),
@@ -221,42 +233,8 @@ export default {
     searchResultTasks() {
       let keyword = this.searchString.toLowerCase();
       let results = this.tasks.filter(task => {
-        // filters
-        // searchSettings = {
-        //   taskAlgoritm: false (ENG),
-        //   taskEnd: false (isComplited),
-        //   taskInteres: false (isOK),
-        //   taskVerstka: false (Verstka)
-        // }
         let isSearchSettings = true;
-        
-        // if ((this.searchSettings.taskAlgoritm) && (
-        //   task.tags.filter(tag => tag.toLowerCase().indexOf('eng') !== -1)
-        //     .length > 0
-        // )) isSearchSettings = true;
 
-        // if ((this.searchSettings.taskEnd) && (
-        //   task.tags.filter(tag => tag.toLowerCase().indexOf('iscomplited') !== -1)
-        //     .length > 0
-        // )) isSearchSettings = true;
-
-        // if ((this.searchSettings.taskInteres) && (
-        //   task.tags.filter(tag => tag.toLowerCase().indexOf('isok') !== -1)
-        //     .length > 0
-        // )) isSearchSettings = true;
-
-        // if ((this.searchSettings.taskVerstka) && (
-        //   task.tags.filter(tag => tag.toLowerCase().indexOf('verstka') !== -1)
-        //     .length > 0
-        // )) isSearchSettings = true;
-
-
-        // if (this.searchSettings.taskAll) isSearchSettings = true;
-
-
-
-        
-        // others
         if (
           (task.title.toLowerCase().indexOf(keyword) !== -1) &&
           (isSearchSettings)
@@ -268,7 +246,7 @@ export default {
         (isSearchSettings))
           return task;
         return false;
-      });
+      });   
       return results;
     }
   },
@@ -284,11 +262,32 @@ export default {
   },
   methods: {
     setKeyword(keyword) {
-      this.searchString = keyword;
+      this.searchString = keyword;        
+    },
+    setSelected(x) {
+      // Можно разделить выводы selecta и поля поиска
+
+      if (x=='all') this.searchString = ''
+        else this.searchString = x;
     }
   }
 };
 </script>
 
 <style >
+/* .task-grid{
+  text-align: center;
+} */
+.task-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.task-enter-active, .task-leave-active {
+  transition: all 0.6s;
+}
+.task-enter, .task-leave-to /* .task-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
 </style>

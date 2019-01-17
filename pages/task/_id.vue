@@ -6,14 +6,14 @@
         <h2 class="title-task">
           {{ title }}
         </h2>
-        <h3>Description</h3>
+        <h3>Описание</h3>
         
         <!-- eslint-disable-next-line -->
         <div v-html="fulldescription" />
         <!-- MAIN DESCRIPTION -->
         
         <!-- END DESCRIPTION -->
-        <h3>Tags:</h3>
+        <h3>Теги:</h3>
         <span             
           v-for="(item, index) in tags"
           :key="index"
@@ -24,7 +24,7 @@
           </span> 
         </span>
         <p v-if="Difficulty">
-          <b>difficulty</b>: 
+          <b>Сложность(codeware)</b>: 
           {{ Difficulty }} kyu
         </p>
         <p v-if="github">

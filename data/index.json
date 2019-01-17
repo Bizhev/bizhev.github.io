@@ -9,20 +9,21 @@
       "Regular Expressions",
       "Declarative Programming",
       "Advanced Language Features",
-      "Strings"
+      "Strings",
+      "algoritm"
     ],
     "Difficulty": 8,
     "description": "A common task",
     "github": "",
-    "fulldescription":"Basic regex tasks. Write a function that takes in a numeric code of any length. The function should check if the code begins with 1, 2, or 3 and return true if so. Return false otherwise.You can assume the input will always be a number.",
+    "fulldescription":"Basic regex tasks. Write a function that takes in a numeric code of any lalgoritmth. The function should check if the code begins with 1, 2, or 3 and return true if so. Return false otherwise.You can assume the input will always be a number.",
     "idpen":"yGXVEM"
   },
   {
     "id": 15,
     "url": "http://bizhev.ru",
     "img": "bizhev-logo.png",
-    "title": "Nuxt server development SPA",
-    "tags": ["vuejs", "SPA", "result"],
+    "title": "Nuxt server development",
+    "tags": ["vuejs", "nuxt", "inDeveloping"],
     "Difficulty": 0,
     "description": "My catalog showing my skills",
     "github": "https://github.com/Bizhev/bizhev.github.io/tree/vue",
@@ -35,7 +36,7 @@
     "url": "",
     "img": "gulp-logo.png",
     "title": "Gulp - template server",
-    "tags": ["template"],
+    "tags": ["template","end"],
     "Difficulty": 0,
     "description": "Server template",
     "github": "https://github.com/youtodo/g-server",
@@ -48,7 +49,7 @@
     "url": "",
     "img": "webpack.png",
     "title": "Webpack - template server",
-    "tags": ["template"],
+    "tags": ["template","end"],
     "Difficulty": 0,
     "description": "Template server",
     "github": "https://github.com/youtodo/w-server",
@@ -74,7 +75,7 @@
     "url": "https://youtodo.github.io/img-scale/",
     "img": "waves.png",
     "title": "PIXI - IMG - WAVES",
-    "tags": ["waves", "observe", "RU", "result"],
+    "tags": ["waves", "observe", "RU", "interes"],
     "Difficulty": 0,
     "description": "Появление картинок, observe, эфект при наведении на картинок",
     "github": "https://github.com/youtodo/img-scale",
@@ -86,7 +87,7 @@
     "url": "https://youtodo.github.io/pixi-oblique/",
     "img": "lose.png",
     "title": "Transition oblique",
-    "tags": ["pixi.js", "pubsub-js", "gsap", "gulp", "spa", "result", "RU"],
+    "tags": ["pixi.js", "pubsub-js", "gsap", "gulp", "spa", "interes", "RU"],
     "Difficulty": 0,
     "description": "SPA, наклонный переход страниц, эфект после скрола. ",
     "github": "https://github.com/youtodo/pixi-oblique",
@@ -98,7 +99,7 @@
     "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task9.md",
     "img": "task.png",
     "title": "The Hashtag Generator",
-    "tags": ["ALGORITHMS", "STRINGS", "ENG"],
+    "tags": ["ALGORITHMS", "STRINGS", "algoritm"],
     "Difficulty": 5,
     "description": "A common task",
     "github": "",     
@@ -110,7 +111,7 @@
     "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task8.md",
     "img": "task.png",
     "title": "Exclamation marks series #11",
-    "tags": ["FUNDAMENTALS", "ENG"],
+    "tags": ["FUNDAMENTALS", "algoritm"],
     "Difficulty": 8,
     "description": "A common task. Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel",
     "github": "",
@@ -122,7 +123,7 @@
     "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task7.md",
     "img": "task.png",
     "title": "Simple Pig Latin",
-    "tags": ["ALGORITHMS", "ENG"],
+    "tags": ["ALGORITHMS", "algoritm"],
     "Difficulty": 5,
     "description": "A common task",
     "github": "",
@@ -141,7 +142,7 @@
       "ADVANCED LANGUAGE FEATURES",
       "STRINGS",
       "ALGORITHMS",
-      "ENG"
+      "algoritm"
     ],
     "Difficulty": 6,
     "description": "A common task",
@@ -168,7 +169,7 @@
       "ADVANCED LANGUAGE FEATURES",
       "FUNCTIONAL PROGRAMMING",
       "DECLARATIVE PROGRAMMING",
-      "ENG"
+      "algoritm"
     ],
     "Difficulty": 5,
     "description": "A common task",
@@ -181,7 +182,7 @@
     "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task4.md",
     "img": "task.png",
     "title": "RGB To Hex Conversion",
-    "tags": ["ALGORITHMS", "ENG"],
+    "tags": ["ALGORITHMS", "algoritm"],
     "Difficulty": 5,
     "description": "A common task",
     "github": "",
@@ -199,7 +200,7 @@
       "DECLARATIVE PROGRAMMING",
       "ADVANCED LANGUAGE FEATURES",
       "STRINGS",
-      "ENG"
+      "algoritm"
     ],
     "Difficulty": 7,
     "description": "A common task",
@@ -218,7 +219,7 @@
       "DECLARATIVE PROGRAMMING",
       "ADVANCED LANGUAGE FEATURES",
       "STRINGS",
-      "ENG"
+      "algoritm"
     ],
     "Difficulty": 6,
     "description": "A common task",
@@ -239,7 +240,7 @@
       "LISTS",
       "DATA STRUCTURES",
       "STRINGS",
-      "ENG"
+      "algoritm"
     ],
     "Difficulty": 6,
     "description": "The task of using arrays in javascript",
