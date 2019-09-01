@@ -154,6 +154,7 @@ function searchSettingsItemsToTags (orignMass,originObj,str){
 }
 
 export default {
+  // transition: 'bounce',
   head() {
     return {
       title: "Портфолио | Долет Бижев",

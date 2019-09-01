@@ -1,4 +1,5 @@
 import Vue from "vue";
+import 'babel-polyfill'
 import "vuetify/dist/vuetify.min.css";
 import Vuetify from "vuetify";
 import colors from "vuetify/es5/util/colors";

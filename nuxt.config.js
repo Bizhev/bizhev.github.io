@@ -1,11 +1,16 @@
 const MYDATA = require("./data/index.json");
 module.exports = {
+  css: ['assets/main.css'],
   dev: (process.env.NODE_ENV !== 'production'),
 
-  
+
   /*
    ** Headers of the page
    */
+  router: {
+    mode: 'history'
+  },
+
   plugins: [
     { src: "~plugins/ga.js", ssr: false },
     { src: "~plugins/vuetify.js" },
@@ -16,7 +21,7 @@ module.exports = {
   ],
 
   generate: {
-    
+
     routes: function() {
       let routes = MYDATA.map(task => {
         return "/task/" + task.id;
@@ -25,7 +30,7 @@ module.exports = {
       return routes;
     }
   },
-  
+
   head: {
     htmlAttrs: {
       lang: "ru"
@@ -59,7 +64,7 @@ module.exports = {
    ** Customize the progress bar color
    */
   loading: { color: "#fff" },
-  
+
 
   /*
    ** Global CSS

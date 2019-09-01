@@ -110,10 +110,10 @@
     "id": 8,
     "url": "https://github.com/Bizhev/bizhev.github.io/blob/vue/data/tasks/task8.md",
     "img": "task.png",
-    "title": "Exclamation marks series #11",
+    "title": "Exclamation marks",
     "tags": ["FUNDAMENTALS", "algoritm"],
     "Difficulty": 8,
-    "description": "A common task. Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel",
+    "description": "A common task. Replace all vowel to exclamation mark in the sentence.",
     "github": "",
     "fulldescription":"<p>Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.</p>  <h3>Examples</h3> <code>replace('Hi!') === 'H!!'\n replace('!Hi! Hi!') === '!H!! H!!'\n replace('aeiou') === '!!!!!'\n replace('ABCDE') === '!BCD!'\n </code>",
     "idpen": "YdQpqj"

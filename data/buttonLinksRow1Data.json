@@ -10,10 +10,10 @@
   {
     "id": 2,
     "icon": "stroopwafel",
-    "title": "Пишу о всяком...",
+    "title": "",
     "text": "Блог",
-    "link": "blog",
-    "itemprop": "portfolio"
+    "link": "/",
+    "itemprop": ""
   },
   {
     "id": 1,

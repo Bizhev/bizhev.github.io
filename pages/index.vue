@@ -1,50 +1,50 @@
-<template>  
+<template>
   <v-content>
-    <v-container 
-      fluid 
+    <v-container
+      fluid
       fill-height
     >
-      <v-layout 
-        justify-center 
+      <v-layout
+        justify-center
         align-center
       >
-        <v-flex 
+        <v-flex
           shrink
-        >  
+        >
           <section class="container">
-            <div 
+            <div
               id="chImg"
               class="ava"
             >
-              <!-- eslint-disable-->
+
               <v-avatar
                 :size="200"
                 xs12
                 sm6
                 md8
                 color="grey lighten-4"
-                @click="changeImg"                                  
+                @click="changeImg"
               >
-                <img 
-                  :class="{ava__animation: isAvaClass}" 
-                  :src="img_now" 
+                <img
+                  :class="{ava__animation: isAvaClass}"
+                  :src="img_now"
                   alt="Dolet Bizhev"
                 >
               </v-avatar>
-              
+
               <!-- eslint-enable-->
-              <h2>Долет Бижев</h2>      
+              <h2>Долет Бижев</h2>
             </div>
             <ul class="contact__list">
-              <li 
-                v-for="item in massLinks1" 
-                :key="item.id" 
+              <li
+                v-for="item in massLinks1"
+                :key="item.id"
                 class="contact__item"
               >
-                <buttonLink 
-                  :icon="item.icon" 
-                  :title="item.title" 
-                  :text="item.text" 
+                <buttonLink
+                  :icon="item.icon"
+                  :title="item.title"
+                  :text="item.text"
                   :link="item.link"
                   :itemprop="item.itemprop"
                 />
@@ -52,20 +52,20 @@
             </ul>
             <!-- Второй блок -->
             <ul class="contact__list">
-              <li 
-                v-for="item in massLinks2" 
-                :key="item.id" 
+              <li
+                v-for="item in massLinks2"
+                :key="item.id"
                 class="contact__item"
               >
-                <buttonLink 
-                  :icon="item.icon" 
-                  :title="item.title" 
-                  :text="item.text" 
+                <buttonLink
+                  :icon="item.icon"
+                  :title="item.title"
+                  :text="item.text"
                   :link="item.link"
                   :itemprop="item.itemprop"
                 />
               </li>
-            </ul>    
+            </ul>
           </section>
         </v-flex>
       </v-layout>
@@ -96,9 +96,9 @@ export default {
   },
 
   data() {
-    return {      
+    return {
       img_now: "/22.png",
-      img: ["/22.png","/444.jpg","/4.jpg","/9.jpg"],
+      img: ["/22.png","/444.jpg","/4.jpg","/9.jpg","/11.jpg"],
       imgIndex:1,
       isAvaClass: false,
       massLinks1: buttonLinks1Data,
@@ -126,13 +126,13 @@ export default {
     }
 
 
-    
+
   }
 };
 </script>
 <style>
-/*BEGIN typography*/ 
-/*   */ 
+/*BEGIN typography*/
+/*   */
 body {
   /* font-family: 'Podkova', serif; */
   font-family: 'Roboto Slab', serif;
@@ -143,8 +143,8 @@ h1,h2,h3 {
 h2 {
   font-size: 3rem
 }
-/*END typography*/ 
-/*BEGIN elements*/ 
+/*END typography*/
+/*BEGIN elements*/
 .ava {
   padding-bottom: 2vh;
   display: inline-block;
@@ -160,7 +160,7 @@ h2 {
   transition: transform 0.7s;
 } */
 
-/*END elements*/ 
+/*END elements*/
 .container {
   position: relative;
   text-align: center;
@@ -172,24 +172,6 @@ h2 {
   cursor: pointer;
 }
 
-/* .ava__img img {
-  border-radius: 30%;
-  height: 13vw;
-  min-height: 130px;
-  margin-bottom: 2.5vh;
-  display: inline-block;
-  transform: rotate3d(0, 1, 0, -360deg);
-  transition: transform 0.7s;
-}
-.ava__img2 img {
-  border-radius: 30%;
-  height: 13vw;
-  min-height: 130px;
-  margin-bottom: 2.5vh;
-  display: inline-block;
-  transform: rotate3d(0, 1, 0, +360deg);
-  transition: transform 0.7s;
-} */
 
 @media (max-width: 1264px) {
 .contact__item {
@@ -198,17 +180,17 @@ h2 {
 
 }
 @media (max-width: 640px) {
-  /*BEGIN tipography*/ 
-  /*   */ 
+  /*BEGIN tipography*/
+  /*   */
   h2 {
     font-size: 2rem;
-  } 
+  }
   .contact__item {
     display: block;
-    
+
   }
 
-/*END tipography*/ 
+/*END tipography*/
 
 }
 </style>
