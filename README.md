@@ -1,5 +1,6 @@
 # bizhev.github.io
 
+[![Build Status](https://travis-ci.com/Bizhev/bizhev.github.io.svg?branch=dev)](https://travis-ci.com/Bizhev/bizhev.github.io)
 ![Build Status](https://david-dm.org/Bizhev/bizhev.github.io.svg)
 [![Code Style](https://badgen.net/badge/code%20style/airbnb/ff5a5f?icon=airbnb)](https://github.com/airbnb/javascript)
 
