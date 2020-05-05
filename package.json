@@ -1,5 +1,5 @@
 {
-  "name": "bizhev.github.io2",
+  "name": "dolet_page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,7 @@
     "build": "vue-cli-service build",
     "deploy": "sh scripts/deploy.sh",
     "push": "sh scripts/push.sh",
+    "push:main": "sh ./scripts/pushed_main.sh",
     "test": "vue-cli-service test:unit",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
@@ -17,6 +18,7 @@
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
+    "vue-disqus": "^3.0.5",
     "vue-property-decorator": "^8.4.1",
     "vue-router": "^3.1.6",
     "vuex": "^3.1.3"
